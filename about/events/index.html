@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Setup -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="The Cyber Pioneer Team">
+    <meta name="language" content="en">
+
+    <!-- Title & SEO -->
+    <title>Events - The Cyber Pioneer</title>
+    <meta name="description"
+        content="Stay updated with upcoming events, workshops, and cybersecurity seminars hosted by The Cyber Pioneer.">
+    <link rel="canonical" href="https://www.tcpioneer.org/about/events/">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0f172a">
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Events - The Cyber Pioneer">
+    <meta property="og:description"
+        content="Stay updated with upcoming events, workshops, and cybersecurity seminars hosted by The Cyber Pioneer.">
+    <meta property="og:url" content="https://www.tcpioneer.org/about/events/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Cyber Pioneer">
+    <meta property="og:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Events - The Cyber Pioneer">
+    <meta name="twitter:description"
+        content="Stay updated with upcoming events, workshops, and cybersecurity seminars hosted by The Cyber Pioneer.">
+    <meta name="twitter:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Cybersecurity Awareness Events",
+  "url": "https://www.tcpioneer.org/about/events/",
+  "description": "Stay updated with upcoming events, workshops, and cybersecurity seminars hosted by The Cyber Pioneer.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Cyber Pioneer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tcpioneer.org/images/nav-logo.png"
+    }
+  }
+}
+    </script>
+
+
+    <!-- Styles & Scripts -->
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- SwiperJS CSS for carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="bg-gradient-to-b from-gray-50 to-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo + Org Name -->
+                <div class="flex-shrink-0">
+                    <a href="/" class="flex items-center gap-2 group">
+                        <img class="h-14 w-14 transition-transform duration-300 ease-in-out hover:scale-110 bg-white"
+                            src="../../images/nav-logo.png" alt="Cyber Pioneer Logo">
+                        <span class="hidden sm:inline text-xl font-bold text-blue-700 tracking-tight ml-2">The Cyber
+                            Pioneer</span>
+                    </a>
+                </div>
+                <!-- Desktop Nav (show on lg and up) -->
+                <ul class="hidden lg:flex items-center space-x-1 lg:space-x-2 xl:space-x-3 text-base lg:text-lg">
+                    <!-- Home -->
+                    <li>
+                        <a href="/"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition  hover:shadow-md">
+                            <i class="fas fa-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-blue-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-info-circle"></i> <span>About</span> <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-2 w-52 bg-white border border-blue-100 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <li><a href="/about/organization"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Organization</a>
+                            </li>
+                            <li><a href="/about/team"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Team</a>
+                            </li>
+                            <li><a href="/about/services"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Services</a>
+                            </li>
+                            <li><a href="/about/events"
+                                    class="block px-5 py-3 text-blue-600 hover:bg-blue-50 hover:text-blue-900">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-book"></i> <span>Resources</span> <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-2 w-52 bg-white border border-blue-100 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <li><a href="/resources/blogs"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Blogs</a>
+                            </li>
+                            <li><a href="/resources/tools"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Tools</a>
+                            </li>
+                            <li><a href="/resources/guides"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Guides</a>
+                            </li>
+                            <li><a href="/resources/roadmaps"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Roadmaps</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Other Links -->
+                    <li>
+                        <a href="/faq"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-question-circle"></i> <span>FAQ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-phone-alt"></i> <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/joinus"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-user-plus"></i> <span>Join Us</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Mobile Menu Toggle (show on sm and md, hide on lg and up) -->
+                <button id="mobile-menu-toggle"
+                    class="lg:hidden text-blue-700 text-3xl hover:bg-blue-100 focus:outline-none transition">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed inset-0 w-full h-full bg-gradient-to-b from-white via-blue-50 to-white z-50 hidden overflow-y-auto transition-transform duration-300 transform -translate-x-full"
+            style="will-change: transform;">
+            <div class="w-full h-full flex flex-col pt-8 pb-8 px-4 sm:px-8 md:px-14 relative shadow-2xl animate-none"
+                id="mobile-menu-inner">
+                <div class="flex items-center justify-between mb-6 px-1">
+                    <a href="/" class="flex items-center gap-2">
+                        <img class="h-12 w-12" src="../../images/nav-logo.png" alt="Cyber Pioneer Logo">
+                        <span
+                            class="text-xl font-extrabold text-blue-700 tracking-tight font-mono drop-shadow whitespace-nowrap">The
+                            Cyber Pioneer</span>
+                    </a>
+                    <button id="mobile-menu-close"
+                        class="ml-2 flex items-center justify-center w-11 h-11 text-2xl text-blue-700 hover:text-blue-900 bg-blue-50 rounded-full shadow-lg z-50 border border-blue-200 transition-all duration-200 focus:outline-none">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="flex flex-col gap-1 w-full max-w-md mx-auto mt-2">
+
+                    <!-- Home -->
+                    <li><a href="/"
+                            class="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-600 font-semibold hover:bg-blue-100 transition"><i
+                                class="fas fa-home"></i> Home</a></li>
+
+                    <!-- About -->
+                    <li>
+                        <button
+                            class="flex items-center gap-2 w-full px-4 py-2 rounded-xl text-blue-700 font-semibold hover:bg-blue-100 transition"
+                            onclick="document.getElementById('mobile-about').classList.toggle('hidden')">
+                            <i class="fas fa-info-circle"></i> About <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul id="mobile-about" class="hidden flex-col ml-6 mt-1">
+                            <li><a href="/about/organization"
+                                    class="block px-4 py-2 rounded hover:bg-blue-50">Organization</a></li>
+                            <li><a href="/about/team" class="block px-4 py-2 rounded hover:bg-blue-50">Team</a></li>
+                            <li><a href="/about/services" class="block px-4 py-2 rounded hover:bg-blue-50">Services</a>
+                            </li>
+                            <li><a href="/about/events"
+                                    class="block px-4 py-2 text-blue-600 rounded hover:bg-blue-50">Events</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Resources -->
+                    <li>
+                        <button
+                            class="flex items-center gap-2 w-full px-4 py-2 rounded-xl text-gray-700 font-semibold hover:bg-blue-100 transition"
+                            onclick="document.getElementById('mobile-resources').classList.toggle('hidden')">
+                            <i class="fas fa-book"></i> Resources <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul id="mobile-resources" class="hidden flex-col ml-6 mt-1">
+                            <li><a href="/resources/blogs" class="block px-4 py-2 rounded hover:bg-blue-50">Blogs</a>
+                            </li>
+                            <li><a href="/resources/tools" class="block px-4 py-2 rounded hover:bg-blue-50">Tools</a>
+                            </li>
+
+                            <li><a href="/resources/guides" class="block px-4 py-2 rounded hover:bg-blue-50">Guides</a>
+                            </li>
+                            <li><a href="/resources/roadmaps"
+                                    class="block px-4 py-2 rounded hover:bg-blue-50">Roadmaps</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Others -->
+                    <li><a href="/faq"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="/contact"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="/joinus"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-user-plus"></i> Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.getElementById('mobile-menu-toggle');
+                const menu = document.getElementById('mobile-menu');
+                const menuInner = document.getElementById('mobile-menu-inner');
+                const menuClose = document.getElementById('mobile-menu-close');
+                function openMenu() {
+                    menu.classList.remove('hidden');
+                    setTimeout(() => {
+                        menu.classList.remove('-translate-x-full');
+                        menu.classList.add('translate-x-0');
+                    }, 10);
+                    document.body.classList.add('overflow-hidden');
+                }
+                function closeMenu() {
+                    menu.classList.remove('translate-x-0');
+                    menu.classList.add('-translate-x-full');
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }, 300);
+                }
+                if (menuToggle && menu) {
+                    menuToggle.addEventListener('click', openMenu);
+                }
+                if (menuClose && menu) {
+                    menuClose.addEventListener('click', closeMenu);
+                }
+                menu && menu.addEventListener('click', function (e) {
+                    if (e.target === menu) {
+                        closeMenu();
+                    }
+                });
+            });
+        </script>
+    </nav>
+
+    <main class="py-16 bg-gradient-to-b from-white via-blue-50 to-white min-h-[60vh]">
+        <div class="max-w-6xl mx-auto px-4 pt-20">
+            <h2
+                class="text-4xl md:text-5xl font-extrabold text-blue-800 mb-10 text-center flex items-center justify-center gap-3">
+
+                Events & Seminars
+            </h2>
+            <div class="flex flex-col md:flex-row gap-10 md:gap-16">
+                <!-- Events Column -->
+                <div class="flex-1 flex flex-col gap-8">
+                    <!-- Event 1: Vidya Sadan Sec School -->
+                    <div class="relative group bg-white/90 border-l-4 border-blue-400 rounded-2xl shadow-xl p-6 flex flex-col md:flex-row gap-6 hover:shadow-blue-300 transition-all duration-300 animate__animated animate__fadeInUp"
+                        data-aos="fade-up">
+                        <div class="flex-shrink-0 flex flex-col items-center md:items-start">
+                            <div
+                                class="w-28 h-28 rounded-xl overflow-hidden border-2 border-blue-200 bg-gradient-to-br from-blue-100 to-white flex items-center justify-center mb-2">
+                                <img src="/images/vidya-sadan-pics/1.jpg" alt="Vidya Sadan Secondary School Event"
+                                    class="object-cover w-full h-full" />
+                            </div>
+                            <span
+                                class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white text-xs font-bold shadow mt-2">
+
+                                Nepal
+                            </span>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold text-blue-700 mb-1 flex items-center gap-2">
+                                    <span class="text-lg">🎤</span> Cyber Awareness Seminar - Vidya Sadan Sec School
+                                </h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                                    <i class="fas fa-calendar-alt text-blue-400"></i> 2025
+                                    <span class="inline-block w-1 h-1 bg-blue-300 rounded-full mx-2"></span>
+                                    <span class="inline-flex items-center gap-1"><i
+                                            class="fas fa-school text-cyan-400"></i> Class 9 & 10</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">A dynamic seminar for Class 9 & 10 students at
+                                    Vidya Sadan Secondary School, featuring an engaging presentation, live hacking
+                                    demonstration, and interactive Q&A session. <span
+                                        class="text-blue-500 font-semibold">First of its kind in Birgunj, Nepal!</span>
+                                </p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <button onclick="openModal('modal-vidya')"
+                                    class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold text-sm shadow hover:from-blue-700 hover:to-cyan-600 transition-all duration-300">
+                                    <i class="fas fa-book-open"></i> Read More
+                                </button>
+                                <a href="#" onclick="openPhotos('vidya')"
+                                    class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-400 text-white font-semibold text-sm shadow hover:from-cyan-600 hover:to-blue-500 transition-all duration-300">
+                                    <i class="fas fa-images"></i> View Photos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 2: Global Business College -->
+                    <div class="relative group bg-white/90 border-l-4 border-green-400 rounded-2xl shadow-xl p-6 flex flex-col md:flex-row gap-6 hover:shadow-green-300 transition-all duration-300 animate__animated animate__fadeInUp" data-aos="fade-up">
+                        <div class="flex-shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-28 h-28 rounded-xl overflow-hidden border-2 border-green-200 bg-gradient-to-br from-green-100 to-white flex items-center justify-center mb-2">
+                                <img src="/images/global-business-college/1.JPG" alt="Global Business College Event" class="object-cover w-full h-full" />
+                            </div>
+                            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-red-500 to-blue-500 text-white text-xs font-bold shadow mt-2">
+                                Nepal
+                            </span>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold text-green-700 mb-1 flex items-center gap-2">
+                                    <span class="text-lg">🎤</span> Cybersecurity Awareness - Global Business College
+                                </h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                                    <i class="fas fa-calendar-alt text-green-400"></i> 2025
+                                    <span class="inline-block w-1 h-1 bg-green-300 rounded-full mx-2"></span>
+                                    <span class="inline-flex items-center gap-1"><i class="fas fa-university text-green-400"></i> Class 12</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">A special program for Class 12 students at Global Business College, focusing on real-world cyber threats, live demonstrations, and practical security tips. <span class="text-green-500 font-semibold">Empowering the next generation of cyber leaders!</span></p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <button onclick="openModal('modal-global')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-green-600 to-blue-500 text-white font-semibold text-sm shadow hover:from-green-700 hover:to-blue-600 transition-all duration-300">
+                                    <i class="fas fa-book-open"></i> Read More
+                                </button>
+                                <a href="#" onclick="openPhotos('global')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-green-400 text-white font-semibold text-sm shadow hover:from-blue-600 hover:to-green-500 transition-all duration-300">
+                                    <i class="fas fa-images"></i> View Photos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 3: Oasis Secondary School -->
+                    <div class="relative group bg-white/90 border-l-4 border-cyan-400 rounded-2xl shadow-xl p-6 flex flex-col md:flex-row gap-6 hover:shadow-cyan-300 transition-all duration-300 animate__animated animate__fadeInUp" data-aos="fade-up">
+                        <div class="flex-shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-28 h-28 rounded-xl overflow-hidden border-2 border-cyan-200 bg-gradient-to-br from-cyan-100 to-white flex items-center justify-center mb-2">
+                                <img src="/images/oasis-sec-school/2.jpg" alt="Oasis Secondary School Event" class="object-cover w-full h-full" />
+                            </div>
+                            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-cyan-500 to-blue-400 text-white text-xs font-bold shadow mt-2">
+                                Nepal
+                            </span>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold text-cyan-700 mb-1 flex items-center gap-2">
+                                    <span class="text-lg">📢</span> Cybersecurity Awareness Seminar - Oasis Secondary School
+                                </h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                                    <i class="fas fa-calendar-alt text-cyan-400"></i> 5th September 2025
+                                    <span class="inline-block w-1 h-1 bg-cyan-300 rounded-full mx-2"></span>
+                                    <span class="inline-flex items-center gap-1"><i class="fas fa-school text-cyan-400"></i> Birgunj</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">On 5th September 2025, The Cyber Pioneer conducted a Cybersecurity Awareness Seminar at Oasis Secondary School, Birgunj.<br>It was an amazing opportunity to interact with students from a remote school, share knowledge about online safety, and inspire them to stay secure in the digital world. <span class="text-cyan-500 font-semibold">🌐✨</span></p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <button onclick="openModal('modal-oasis')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-600 to-blue-500 text-white font-semibold text-sm shadow hover:from-cyan-700 hover:to-blue-600 transition-all duration-300">
+                                    <i class="fas fa-book-open"></i> Read More
+                                </button>
+                                <a href="#" onclick="openPhotos('oasis')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold text-sm shadow hover:from-blue-600 hover:to-cyan-500 transition-all duration-300">
+                                    <i class="fas fa-images"></i> View Photos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 4: Birgunj Institute of Technology -->
+                    <div class="relative group bg-white/90 border-l-4 border-indigo-400 rounded-2xl shadow-xl p-6 flex flex-col md:flex-row gap-6 hover:shadow-indigo-300 transition-all duration-300 animate__animated animate__fadeInUp" data-aos="fade-up">
+                        <div class="flex-shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-28 h-28 rounded-xl overflow-hidden border-2 border-indigo-200 bg-gradient-to-br from-indigo-100 to-white flex items-center justify-center mb-2">
+                                <img src="/images/birgunj-institute-of-technology/1.jpg" alt="Birgunj Institute of Technology Event" class="object-cover w-full h-full" />
+                            </div>
+                            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-indigo-500 to-blue-500 text-white text-xs font-bold shadow mt-2">
+                                Nepal
+                            </span>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold text-indigo-700 mb-1 flex items-center gap-2">
+                                    <span class="text-lg">✨</span> "Empowering minds, securing futures!" — Birgunj Institute of Technology
+                                </h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                                    <i class="fas fa-calendar-alt text-indigo-400"></i> 3rd November 2025
+                                    <span class="inline-block w-1 h-1 bg-indigo-300 rounded-full mx-2"></span>
+                                    <span class="inline-flex items-center gap-1"><i class="fas fa-university text-indigo-400"></i> Birgunj</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">We just wrapped up an amazing Cyber Awareness Seminar at Birgunj Institute of Technology, organized by The Cyber Pioneer. <br><br>
+                                A big shoutout to <strong>Mishal Mohamad</strong> (President, Club Abhiyanta), <strong>Rishav Shah</strong>, and all the incredible students and faculty members for their energy, support, and warm welcome — you made it truly special! 🙌<br><br>
+                                It was an honor to share insights as the speaker — <strong>Anand Keshari</strong> 🎤. Let’s keep spreading cyber awareness and work together to build a safer digital world. 🌐🛡️
+                                </p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <button onclick="openModal('modal-birgunj')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-blue-500 text-white font-semibold text-sm shadow hover:from-indigo-700 hover:to-blue-600 transition-all duration-300">
+                                    <i class="fas fa-book-open"></i> Read More
+                                </button>
+                                <a href="#" onclick="openPhotos('birgunj')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-indigo-400 text-white font-semibold text-sm shadow hover:from-blue-600 hover:to-indigo-500 transition-all duration-300">
+                                    <i class="fas fa-images"></i> View Photos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 5: Southzone Secondary School -->
+                    <div class="relative group bg-white/90 border-l-4 border-purple-400 rounded-2xl shadow-xl p-6 flex flex-col md:flex-row gap-6 hover:shadow-purple-300 transition-all duration-300 animate__animated animate__fadeInUp" data-aos="fade-up">
+                        <div class="flex-shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-28 h-28 rounded-xl overflow-hidden border-2 border-purple-200 bg-gradient-to-br from-purple-100 to-white flex items-center justify-center mb-2">
+                                <i class="fas fa-graduation-cap text-4xl text-purple-500"></i>
+                            </div>
+                            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white text-xs font-bold shadow mt-2">
+                                Nepal
+                            </span>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold text-purple-700 mb-1 flex items-center gap-2">
+                                    <span class="text-lg">🛡️</span> Cyber Awareness Training - Southzone Secondary School
+                                </h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                                    <i class="fas fa-calendar-alt text-purple-400"></i> 2025
+                                    <span class="inline-block w-1 h-1 bg-purple-300 rounded-full mx-2"></span>
+                                    <span class="inline-flex items-center gap-1"><i class="fas fa-school text-purple-400"></i> Students & Staff</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">A comprehensive cyber awareness training program organized at Southzone Secondary School, designed to educate students and staff about digital security threats, safe online practices, and cybersecurity fundamentals. <span class="text-purple-500 font-semibold">Building a cyber-secure community, one school at a time!</span></p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <button onclick="openModal('modal-southzone')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold text-sm shadow hover:from-purple-700 hover:to-blue-600 transition-all duration-300">
+                                    <i class="fas fa-book-open"></i> Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 6: Kathmandu University - IT Meet 2025 -->
+                    <div class="relative group bg-white/90 border-l-4 border-amber-400 rounded-2xl shadow-xl p-6 flex flex-col md:flex-row gap-6 hover:shadow-amber-300 transition-all duration-300 animate__animated animate__fadeInUp" data-aos="fade-up">
+                        <div class="flex-shrink-0 flex flex-col items-center md:items-start">
+                            <div class="w-28 h-28 rounded-xl overflow-hidden border-2 border-amber-200 bg-gradient-to-br from-amber-100 to-white flex items-center justify-center mb-2">
+                                <i class="fas fa-users-cog text-4xl text-amber-500"></i>
+                            </div>
+                            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-bold shadow mt-2">
+                                Nepal
+                            </span>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-2xl font-bold text-amber-700 mb-1 flex items-center gap-2">
+                                    <span class="text-lg">🤝</span> Community Partners - Kathmandu University IT Meet 2025
+                                </h3>
+                                <div class="flex items-center gap-2 text-sm text-gray-500 mb-2">
+                                    <i class="fas fa-calendar-alt text-amber-400"></i> 2025
+                                    <span class="inline-block w-1 h-1 bg-amber-300 rounded-full mx-2"></span>
+                                    <span class="inline-flex items-center gap-1"><i class="fas fa-university text-amber-400"></i> Kathmandu</span>
+                                </div>
+                                <p class="text-gray-700 text-sm mb-3">The Cyber Pioneer is proud to be a community partner at the prestigious Kathmandu University IT Meet 2025. This collaboration brings together tech enthusiasts, cybersecurity professionals, and innovators to share knowledge, network, and explore cutting-edge IT solutions. <span class="text-amber-600 font-semibold">Connecting communities through technology and innovation!</span></p>
+                            </div>
+                            <div class="flex gap-3 mt-2">
+                                <button onclick="openModal('modal-kathmandu')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-amber-600 to-orange-500 text-white font-semibold text-sm shadow hover:from-amber-700 hover:to-orange-600 transition-all duration-300">
+                                    <i class="fas fa-book-open"></i> Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modals for Read More -->
+            <div id="modal-vidya" class="fixed inset-0 z-50 hidden bg-black/60 flex items-center justify-center">
+                <div
+                    class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative animate__animated animate__fadeInUp">
+                    <button onclick="closeModal('modal-vidya')"
+                        class="absolute top-3 right-3 text-2xl text-gray-400 hover:text-blue-600"><i
+                            class="fas fa-times"></i></button>
+                    <h3 class="text-2xl font-bold text-blue-700 mb-2 flex items-center gap-2"><span
+                            class="text-lg">🎤</span> Vidya Sadan Sec School</h3>
+                    <p class="text-gray-700 mb-4">This event was conducted for Class 9 & 10 students at Vidya Sadan
+                        Secondary School, Birgunj. The session included a live hacking demonstration, interactive Q&A,
+                        and practical tips for staying safe online. Students learned about the importance of
+                        cybersecurity in daily life and how to protect themselves from digital threats.</p>
+                    <ul class="list-disc pl-6 text-gray-600 mb-4">
+                        <li>Live hacking demonstration</li>
+                        <li>Cyber safety best practices</li>
+                        <li>Interactive Q&A session</li>
+                    </ul>
+                    <a href="#" onclick="openPhotos('vidya')"
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-400 text-white font-semibold text-sm shadow hover:from-cyan-600 hover:to-blue-500 transition-all duration-300">
+                        <i class="fas fa-images"></i> View Photos
+                    </a>
+                </div>
+            </div>
+            <div id="modal-global" class="fixed inset-0 z-50 hidden bg-black/60 flex items-center justify-center">
+                <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative animate__animated animate__fadeInUp">
+                    <button onclick="closeModal('modal-global')" class="absolute top-3 right-3 text-2xl text-gray-400 hover:text-green-600"><i class="fas fa-times"></i></button>
+                    <h3 class="text-2xl font-bold text-green-700 mb-2 flex items-center gap-2"><span class="text-lg">🎤</span> Global Business College</h3>
+                    <p class="text-gray-700 mb-4">This program was organized for Class 12 students at Global Business College, Birgunj. The event focused on real-world cyber threats, live demonstrations, and practical security tips to empower students for the digital age.</p>
+                    <ul class="list-disc pl-6 text-gray-600 mb-4">
+                        <li>Real-world cyber threat scenarios</li>
+                        <li>Live demonstration of hacking techniques</li>
+                        <li>Practical security tips for students</li>
+                    </ul>
+                    <a href="#" onclick="openPhotos('global')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-green-400 text-white font-semibold text-sm shadow hover:from-blue-600 hover:to-green-500 transition-all duration-300">
+                        <i class="fas fa-images"></i> View Photos
+                    </a>
+                </div>
+            </div>
+            <!-- Modal for Oasis Secondary School Read More -->
+            <div id="modal-oasis" class="fixed inset-0 z-50 hidden bg-black/60 flex items-center justify-center">
+                <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative animate__animated animate__fadeInUp">
+                    <button onclick="closeModal('modal-oasis')" class="absolute top-3 right-3 text-2xl text-gray-400 hover:text-cyan-600"><i class="fas fa-times"></i></button>
+                    <h3 class="text-2xl font-bold text-cyan-700 mb-2 flex items-center gap-2"><span class="text-lg">📢</span> Oasis Secondary School</h3>
+                    <p class="text-gray-700 mb-4">On 5th September 2025, The Cyber Pioneer conducted a Cybersecurity Awareness Seminar at Oasis Secondary School, Birgunj. The session provided an amazing opportunity to interact with students from a remote school, share knowledge about online safety, and inspire them to stay secure in the digital world.</p>
+                    <ul class="list-disc pl-6 text-gray-600 mb-4">
+                        <li>Online safety tips for students</li>
+                        <li>Interactive Q&A and discussion</li>
+                        <li>Inspiring digital security awareness</li>
+                    </ul>
+                    <a href="#" onclick="openPhotos('oasis')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold text-sm shadow hover:from-blue-600 hover:to-cyan-500 transition-all duration-300">
+                        <i class="fas fa-images"></i> View Photos
+                    </a>
+                </div>
+            </div>
+            <!-- Modal for Birgunj Institute of Technology Read More -->
+            <div id="modal-birgunj" class="fixed inset-0 z-50 hidden bg-black/60 flex items-center justify-center">
+                <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative animate__animated animate__fadeInUp">
+                    <button onclick="closeModal('modal-birgunj')" class="absolute top-3 right-3 text-2xl text-gray-400 hover:text-indigo-600"><i class="fas fa-times"></i></button>
+                    <h3 class="text-2xl font-bold text-indigo-700 mb-2 flex items-center gap-2"><span class="text-lg">✨</span> Birgunj Institute of Technology</h3>
+                    <p class="text-gray-700 mb-4">“Empowering minds, securing futures!”<br><br>We just wrapped up an amazing Cyber Awareness Seminar at Birgunj Institute of Technology, organized by The Cyber Pioneer. A big shoutout to Mishal Mohamad (President, Club Abhiyanta), Rishav Shah, and all the incredible students and faculty members for their energy, support, and warm welcome — you made it truly special! It was an honor to share insights as the speaker — Anand Keshari.</p>
+                    <ul class="list-disc pl-6 text-gray-600 mb-4">
+                        <li>Interactive seminar and live demonstrations</li>
+                        <li>Awareness activities for students and faculty</li>
+                        <li>Q&A and practical cybersecurity tips</li>
+                    </ul>
+                    <a href="#" onclick="openPhotos('birgunj')" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-blue-500 text-white font-semibold text-sm shadow hover:from-indigo-700 hover:to-blue-600 transition-all duration-300">
+                        <i class="fas fa-images"></i> View Photos
+                    </a>
+                </div>
+            </div>
+            <!-- Modal for Southzone Secondary School Read More -->
+            <div id="modal-southzone" class="fixed inset-0 z-50 hidden bg-black/60 flex items-center justify-center">
+                <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative animate__animated animate__fadeInUp">
+                    <button onclick="closeModal('modal-southzone')" class="absolute top-3 right-3 text-2xl text-gray-400 hover:text-purple-600"><i class="fas fa-times"></i></button>
+                    <h3 class="text-2xl font-bold text-purple-700 mb-2 flex items-center gap-2"><span class="text-lg">🛡️</span> Southzone Secondary School</h3>
+                    <p class="text-gray-700 mb-4">The Cyber Pioneer conducted a comprehensive cyber awareness training program at Southzone Secondary School. The session was designed to educate both students and staff about the importance of digital security, online safety practices, and protection against cyber threats in today's connected world.</p>
+                    <ul class="list-disc pl-6 text-gray-600 mb-4">
+                        <li>Digital security fundamentals</li>
+                        <li>Common cyber threats and prevention</li>
+                        <li>Safe online practices for students and staff</li>
+                        <li>Interactive Q&A and discussions</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Modal for Kathmandu University IT Meet 2025 Read More -->
+            <div id="modal-kathmandu" class="fixed inset-0 z-50 hidden bg-black/60 flex items-center justify-center">
+                <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative animate__animated animate__fadeInUp">
+                    <button onclick="closeModal('modal-kathmandu')" class="absolute top-3 right-3 text-2xl text-gray-400 hover:text-amber-600"><i class="fas fa-times"></i></button>
+                    <h3 class="text-2xl font-bold text-amber-700 mb-2 flex items-center gap-2"><span class="text-lg">🤝</span> Kathmandu University IT Meet 2025</h3>
+                    <p class="text-gray-700 mb-4">The Cyber Pioneer is thrilled to serve as a community partner at the prestigious Kathmandu University IT Meet 2025. This collaboration brings together brilliant minds from the tech and cybersecurity domains to share knowledge, showcase innovations, and discuss the latest trends in IT and cybersecurity.</p>
+                    <ul class="list-disc pl-6 text-gray-600 mb-4">
+                        <li>Networking with tech professionals and enthusiasts</li>
+                        <li>Knowledge sharing and collaborative discussions</li>
+                        <li>Cybersecurity awareness and best practices</li>
+                        <li>Showcasing innovative IT solutions</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Photo Viewer Modal (simple placeholder) -->
+            <div id="photo-modal" class="fixed inset-0 z-50 hidden bg-black/80 flex items-center justify-center">
+                <div
+                    class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-6 relative animate__animated animate__fadeInUp">
+                    <button onclick="closePhotoModal()"
+                        class="absolute top-3 right-3 text-2xl text-gray-400 hover:text-blue-600"><i
+                            class="fas fa-times"></i></button>
+                    <h3 id="photo-modal-title" class="text-xl font-bold text-blue-700 mb-4 flex items-center gap-2"><i
+                            class="fas fa-images"></i> Event Photos</h3>
+                    <div id="photo-modal-content" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <!-- Images will be injected here -->
+                    </div>
+                </div>
+            </div>
+            <script>
+                // Modal logic
+                function openModal(id) {
+                    document.getElementById(id).classList.remove('hidden');
+                    document.body.classList.add('overflow-hidden');
+                }
+                function closeModal(id) {
+                    document.getElementById(id).classList.add('hidden');
+                    document.body.classList.remove('overflow-hidden');
+                }
+                // Photo modal logic
+                function openPhotos(event) {
+                    const modal = document.getElementById('photo-modal');
+                    const content = document.getElementById('photo-modal-content');
+                    const title = document.getElementById('photo-modal-title');
+                    let images = [];
+                    let eventTitle = '';
+                    if (event === 'vidya') {
+                        images = [
+                            '/images/vidya-sadan-pics/1.jpg',
+                            '/images/vidya-sadan-pics/2.jpg',
+                            '/images/vidya-sadan-pics/3.jpg',
+                            '/images/vidya-sadan-pics/4.jpg',
+                            '/images/vidya-sadan-pics/5.jpg',
+                            '/images/vidya-sadan-pics/6.jpg',
+                            '/images/vidya-sadan-pics/7.jpg',
+                            '/images/vidya-sadan-pics/8.jpeg',
+                        ];
+                        eventTitle = 'Vidya Sadan Sec School Photos';
+                    } else if (event === 'global') {
+                        images = [
+                            '/images/global-business-college/1.JPG',
+                            '/images/global-business-college/2.JPG',
+                            '/images/global-business-college/3.JPG',
+                            '/images/global-business-college/4.JPG',
+                            '/images/global-business-college/5.JPG',
+                            '/images/global-business-college/6.JPG',
+                        ];
+                        eventTitle = 'Global Business College Photos';
+                    } else if (event === 'oasis') {
+                        images = [
+                            '/images/oasis-sec-school/1.jpg',
+                            '/images/oasis-sec-school/2.jpg',
+                            '/images/oasis-sec-school/3.jpg',
+                           
+                        ];
+                        eventTitle = 'Oasis Secondary School Photos';
+                    } else if (event === 'birgunj') {
+                        images = [
+                            '/images/birgunj-institute-of-technology/1.jpg',
+                            '/images/birgunj-institute-of-technology/2.jpg',
+                            '/images/birgunj-institute-of-technology/3.jpg',
+                            '/images/birgunj-institute-of-technology/4.jpg',
+                            '/images/birgunj-institute-of-technology/5.jpg'
+                        ];
+                        eventTitle = 'Birgunj Institute of Technology Photos';
+                    }
+                    content.innerHTML = images.map(src => `<img src="${src}" alt="Event Photo" class="rounded-lg shadow object-cover w-full h-32 md:h-40" />`).join('');
+                    title.textContent = eventTitle;
+                    // Add animation class for fade-in effect
+                    modal.classList.remove('hidden');
+                    modal.classList.remove('animate__fadeOutDown');
+                    modal.classList.add('animate__animated', 'animate__fadeInUp');
+                    document.body.classList.add('overflow-hidden');
+                }
+                function closePhotoModal() {
+                    const modal = document.getElementById('photo-modal');
+                    // Animate out, then hide
+                    modal.classList.remove('animate__fadeInUp');
+                    modal.classList.add('animate__fadeOutDown');
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                        modal.classList.remove('animate__animated', 'animate__fadeOutDown');
+                    }, 400);
+                    document.body.classList.remove('overflow-hidden');
+                }
+            </script>
+        </div>
+
+        <!-- Call to Action: Organize with Us -->
+        <section class="w-full mb-16 mt-20 px-0" data-aos="zoom-in">
+            <div class="relative w-full flex justify-center">
+                <div class="w-full max-w-7xl mx-auto px-4">
+                    <div
+                        class="backdrop-blur-xl bg-white/30 border border-blue-200/40 rounded-3xl shadow-2xl p-10 md:p-16 flex flex-col md:flex-row items-center gap-10 md:gap-16 overflow-hidden glass-cta">
+                        <div class="flex-1 min-w-[250px]">
+                            <h3 class="text-3xl md:text-4xl font-extrabold text-blue-800 mb-4 flex items-center gap-3">
+                                <span
+                                    class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-600 text-white shadow-lg mr-2">
+                                    <i class="fas fa-bullhorn text-2xl"></i>
+                                </span>
+                                Want a Seminar or CTF at Your Place?
+                            </h3>
+                            <p class="text-gray-800 mb-4 text-lg md:text-xl font-medium">Interested in hosting a <span
+                                    class="font-semibold text-blue-600">cybersecurity seminar</span>, <span
+                                    class="font-semibold text-cyan-600">CTF competition</span>, or <span
+                                    class="font-semibold text-green-600">bootcamp/workshop</span> at your school,
+                                college, or organization?</p>
+                            <p class="text-gray-700 mb-6 text-base md:text-lg">We offer live hacking demonstrations,
+                                hands-on CTFs, and interactive cyber awareness programs tailored for students and
+                                professionals across Nepal.</p>
+                            <a href="/contact"
+                                class="inline-flex items-center gap-3 px-8 py-3 rounded-2xl bg-gradient-to-r from-blue-700 via-cyan-500 to-green-400 text-white font-bold text-lg shadow-lg hover:from-blue-800 hover:to-cyan-600 transition-all duration-300 mt-2 backdrop-blur-md">
+                                <i class="fas fa-envelope-open-text"></i> Contact Us to Organize
+                            </a>
+                        </div>
+                        <div class="flex-shrink-0 flex flex-col items-center gap-5 md:gap-8">
+                            <span
+                                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-red-500 to-blue-500 text-white text-lg font-bold shadow-lg backdrop-blur-md">
+
+                                Nepal
+                            </span>
+                            <i class="fas fa-laptop-code text-5xl text-blue-400 animate-pulse drop-shadow-lg"></i>
+                            <i
+                                class="fas fa-user-secret text-4xl text-cyan-500 animate__animated animate__tada animate__infinite drop-shadow-lg"></i>
+                        </div>
+                        <div class="absolute -z-10 left-0 top-0 w-full h-full pointer-events-none">
+                            <svg width="100%" height="100%" viewBox="0 0 800 400" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 w-full h-full">
+                                <defs>
+                                    <radialGradient id="glass-bg1" cx="50%" cy="50%" r="80%" fx="60%" fy="40%"
+                                        gradientTransform="rotate(20)">
+                                        <stop offset="0%" stop-color="#a5f3fc" stop-opacity="0.25" />
+                                        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.05" />
+                                    </radialGradient>
+                                </defs>
+                                <ellipse cx="400" cy="200" rx="380" ry="180" fill="url(#glass-bg1)" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-10 md:gap-8 border-b border-gray-700 pb-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-users-cog text-blue-400"></i> About Us</h3>
+                    <p class="text-gray-400 mb-4">We are <span class="font-bold text-blue-300">The Cyber Pioneer</span>,
+                        a community dedicated to educating and raising awareness about cybersecurity. Join us in
+                        exploring the ever-changing world of security and technology.</p>
+                    <div class="flex space-x-3 mt-4">
+                        <!-- Social Media Icons -->
+                        <a href="https://www.facebook.com/profile.php?id=61578731491248"
+                            class="group bg-blue-900/30 hover:bg-blue-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Facebook">
+                            <i class="fab fa-facebook-f text-xl text-blue-400 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/the-cyber-pioneer/"
+                            class="group bg-blue-800/30 hover:bg-blue-700 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl text-blue-300 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://wa.me/9779746819176"
+                            class="group bg-green-900/30 hover:bg-green-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="WhatsApp">
+                            <i class="fab fa-whatsapp text-xl text-green-400 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://t.me/tcpioneerorg"
+                            class="group bg-cyan-900/30 hover:bg-cyan-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Telegram">
+                            <i class="fab fa-telegram-plane text-xl text-cyan-300 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tcpioneerorg/"
+                            class="group bg-pink-900/30 hover:bg-pink-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Instagram">
+                            <i class="fab fa-instagram text-xl text-pink-400 group-hover:text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-link text-green-400"></i> Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-home"></i> Home</a></li>
+                        <li><a href="/about/organization/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="/faq/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="/contact/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-phone-alt"></i> Contact</a></li>
+                        <li><a href="/disclaimer/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-exclamation-triangle"></i> Disclaimer</a></li>
+                        <li><a href="/joinus/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-user-plus"></i> Join Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-envelope-open-text text-cyan-400"></i> Contact Us</h3>
+                    <p class="text-gray-400 mb-4">Feel free to reach out for any questions or collaborations.</p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2"><i
+                            class="fas fa-phone-alt text-green-400"></i> <span>+977 9746819176</span></p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2"><i
+                            class="fas fa-envelope text-yellow-400"></i> <span>contact@tcpioneer.org</span></p>
+                    <p class="text-gray-400 flex items-center gap-2"><i class="fas fa-map-marker-alt text-pink-400"></i>
+                        <span>Birgunj, Nepal</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="mt-8 pt-4 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 <span class="text-blue-400 font-bold">The Cyber
+                        Pioneer</span>. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-4">Developed by <a href="http://anandkeshari.com.np" target="_blank"
+                        class="text-blue-300 hover:text-white transition-colors font-semibold">Anand Keshari</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function () {
+            if (window.AOS) {
+                AOS.init({
+                    duration: 900,
+                    once: true,
+                    offset: 60
+                });
+            }
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- SwiperJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

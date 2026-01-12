@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Setup -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="The Cyber Pioneer Team">
+    <meta name="language" content="en">
+
+    <!-- Title & SEO -->
+    <title>Our Team - The Cyber Pioneer</title>
+    <meta name="description"
+        content="Meet the passionate team behind The Cyber Pioneer working to empower future cybersecurity professionals.">
+    <link rel="canonical" href="https://www.tcpioneer.org/about/team/">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0f172a">
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Team - The Cyber Pioneer">
+    <meta property="og:description"
+        content="Meet the passionate team behind The Cyber Pioneer working to empower future cybersecurity professionals.">
+    <meta property="og:url" content="https://www.tcpioneer.org/about/team/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Cyber Pioneer">
+    <meta property="og:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Team - The Cyber Pioneer">
+    <meta name="twitter:description"
+        content="Meet the passionate team behind The Cyber Pioneer working to empower future cybersecurity professionals.">
+    <meta name="twitter:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Team",
+  "url": "https://www.tcpioneer.org/about/team/",
+  "description": "Meet the passionate team behind The Cyber Pioneer working to empower future cybersecurity professionals.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Cyber Pioneer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tcpioneer.org/images/nav-logo.png"
+    }
+  }
+}
+    </script>
+
+
+    <!-- Styles & Scripts -->
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- SwiperJS CSS for carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="bg-gradient-to-b from-gray-50 to-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo + Org Name -->
+                <div class="flex-shrink-0">
+                    <a href="/" class="flex items-center gap-2 group">
+                        <img class="h-14 w-14 transition-transform duration-300 ease-in-out hover:scale-110 bg-white"
+                            src="../../images/nav-logo.png" alt="Cyber Pioneer Logo">
+                        <span class="hidden sm:inline text-xl font-bold text-blue-700 tracking-tight ml-2">The Cyber
+                            Pioneer</span>
+                    </a>
+                </div>
+                <!-- Desktop Nav (show on lg and up) -->
+                <ul class="hidden lg:flex items-center space-x-1 lg:space-x-2 xl:space-x-3 text-base lg:text-lg">
+                    <!-- Home -->
+                    <li>
+                        <a href="/"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition  hover:shadow-md">
+                            <i class="fas fa-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-blue-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-info-circle"></i> <span>About</span> <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-2 w-52 bg-white border border-blue-100 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <li><a href="/about/organization"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Organization</a>
+                            </li>
+                            <li><a href="/about/team"
+                                    class="block px-5 py-3 text-blue-700 hover:bg-blue-50 hover:text-blue-900">Team</a>
+                            </li>
+                            <li><a href="/about/services"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Services</a>
+                            </li>
+                            <li><a href="/about/events"
+                                    class="block px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-book"></i> <span>Resources</span> <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-2 w-52 bg-white border border-blue-100 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <li><a href="/resources/blogs"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Blogs</a>
+                            </li>
+                            <li><a href="/resources/tools"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Tools</a>
+                            </li>
+                            <li><a href="/resources/guides"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Guides</a>
+                            </li>
+                            <li><a href="/resources/roadmaps"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Roadmaps</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Other Links -->
+                    <li>
+                        <a href="/faq"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-question-circle"></i> <span>FAQ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-phone-alt"></i> <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/joinus"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-user-plus"></i> <span>Join Us</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Mobile Menu Toggle (show on sm and md, hide on lg and up) -->
+                <button id="mobile-menu-toggle"
+                    class="lg:hidden text-blue-700 text-3xl hover:bg-blue-100 focus:outline-none transition">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed inset-0 w-full h-full bg-gradient-to-b from-white via-blue-50 to-white z-50 hidden overflow-y-auto transition-transform duration-300 transform -translate-x-full"
+            style="will-change: transform;">
+            <div class="w-full h-full flex flex-col pt-8 pb-8 px-4 sm:px-8 md:px-14 relative shadow-2xl animate-none"
+                id="mobile-menu-inner">
+                <div class="flex items-center justify-between mb-6 px-1">
+                    <a href="/" class="flex items-center gap-2">
+                        <img class="h-12 w-12" src="../../images/nav-logo.png" alt="Cyber Pioneer Logo">
+                        <span
+                            class="text-xl font-extrabold text-blue-700 tracking-tight font-mono drop-shadow whitespace-nowrap">The
+                            Cyber Pioneer</span>
+                    </a>
+                    <button id="mobile-menu-close"
+                        class="ml-2 flex items-center justify-center w-11 h-11 text-2xl text-blue-700 hover:text-blue-900 bg-blue-50 rounded-full shadow-lg z-50 border border-blue-200 transition-all duration-200 focus:outline-none">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="flex flex-col gap-1 w-full max-w-md mx-auto mt-2">
+
+                    <!-- Home -->
+                    <li><a href="/"
+                            class="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-600 font-semibold hover:bg-blue-100 transition"><i
+                                class="fas fa-home"></i> Home</a></li>
+
+                    <!-- About -->
+                    <li>
+                        <button
+                            class="flex items-center gap-2 w-full px-4 py-2 rounded-xl text-blue-700 font-semibold hover:bg-blue-100 transition"
+                            onclick="document.getElementById('mobile-about').classList.toggle('hidden')">
+                            <i class="fas fa-info-circle"></i> About <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul id="mobile-about" class="hidden flex-col ml-6 mt-1">
+                            <li><a href="/about/organization"
+                                    class="block px-4 py-2 rounded hover:bg-blue-50">Organization</a></li>
+                            <li><a href="/about/team"
+                                    class="block px-4 py-2 text-blue-600 rounded hover:bg-blue-50">Team</a></li>
+                            <li><a href="/about/services" class="block px-4 py-2 rounded hover:bg-blue-50">Services</a>
+                            </li>
+                            <li><a href="/about/events" class="block px-4 py-2  rounded hover:bg-blue-50">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Resources -->
+                    <li>
+                        <button
+                            class="flex items-center gap-2 w-full px-4 py-2 rounded-xl text-gray-700 font-semibold hover:bg-blue-100 transition"
+                            onclick="document.getElementById('mobile-resources').classList.toggle('hidden')">
+                            <i class="fas fa-book"></i> Resources <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul id="mobile-resources" class="hidden flex-col ml-6 mt-1">
+                            <li><a href="/resources/blogs" class="block px-4 py-2 rounded hover:bg-blue-50">Blogs</a>
+                            </li>
+                            <li><a href="/resources/tools" class="block px-4 py-2 rounded hover:bg-blue-50">Tools</a>
+                            </li>
+
+                            <li><a href="/resources/guides" class="block px-4 py-2 rounded hover:bg-blue-50">Guides</a>
+                            </li>
+                            <li><a href="/resources/roadmaps"
+                                    class="block px-4 py-2 rounded hover:bg-blue-50">Roadmaps</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Others -->
+                    <li><a href="/faq"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="/contact"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="/joinus"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-user-plus"></i> Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.getElementById('mobile-menu-toggle');
+                const menu = document.getElementById('mobile-menu');
+                const menuInner = document.getElementById('mobile-menu-inner');
+                const menuClose = document.getElementById('mobile-menu-close');
+                function openMenu() {
+                    menu.classList.remove('hidden');
+                    setTimeout(() => {
+                        menu.classList.remove('-translate-x-full');
+                        menu.classList.add('translate-x-0');
+                    }, 10);
+                    document.body.classList.add('overflow-hidden');
+                }
+                function closeMenu() {
+                    menu.classList.remove('translate-x-0');
+                    menu.classList.add('-translate-x-full');
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }, 300);
+                }
+                if (menuToggle && menu) {
+                    menuToggle.addEventListener('click', openMenu);
+                }
+                if (menuClose && menu) {
+                    menuClose.addEventListener('click', closeMenu);
+                }
+                menu && menu.addEventListener('click', function (e) {
+                    if (e.target === menu) {
+                        closeMenu();
+                    }
+                });
+            });
+        </script>
+    </nav>
+
+    <main>
+        <section class="py-16 " data-aos="fade-up">
+            <div class="max-w-7xl mx-auto px-4">
+
+                <div class="text-center pt-20 pb-20">
+                    <h1 class="text-4xl font-bold text-blue-800 flex items-center justify-center">
+                        <span
+                            class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-blue-400 to-cyan-400 shadow-lg">
+                            <i class="fas fa-users text-3xl text-white"></i>
+                        </span>
+                        Core Members
+                    </h1>
+                    <p class="mt-4 text-xl text-gray-600">Meet the dedicated team driving The Cyber Pioneer forward with
+                        passion and expertise.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Anand Keshari (blue-cyan, FIRST) -->
+                    <div
+                        class="group relative bg-white/60 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-cyan-400 p-7 flex flex-col items-center overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-cyan-400 hover:border-blue-400 animate__animated animate__fadeInUp animate__fast max-w-md w-full min-h-[540px] mx-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-cyan-200/10 to-white/10 z-0 pointer-events-none">
+                        </div>
+                        <span
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-blue-500 to-cyan-400 shadow-lg border-4 border-white/80 text-white text-3xl font-extrabold drop-shadow-lg animate__animated animate__fadeInDown animate__faster">AK</span>
+                        <img src="../../images/members/founder-image.JPG" alt="Anand Keshari"
+                            class="w-28 h-28 rounded-full border-4 border-cyan-400 object-cover shadow-xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <h3
+                            class="text-2xl font-extrabold text-blue-800 mb-1 tracking-tight drop-shadow flex items-center gap-2">
+                            Anand Keshari <span
+                                class="bg-gradient-to-tr from-cyan-400 to-blue-400 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 shadow">Founder</span>
+                        </h3>
+                        <span class="text-cyan-600 text-base font-semibold mb-2">Founder & Web Dev</span>
+                        <div class="w-full flex flex-col items-center mb-2 mt-1">
+                            <span class="text-xs text-gray-500">Fun Fact: Loves ethical hacking & parrot OS!</span>
+                        </div>
+                        <div
+                            class="bg-white/70 border border-cyan-100 rounded-xl p-4 w-full text-left text-blue-800 text-xs shadow-inner mb-2 flex flex-col gap-1">
+                            <div class="flex items-center gap-2"><span class="font-bold">ID:</span> <span>TCP-95</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Email:</span>
+                                <span>anand@tcpioneer.org</span>
+                            </div>
+                            <!-- DOB removed -->
+                            <div class="flex items-center gap-2"><span class="font-bold">Skills:</span> <span>Web,
+                                    Cybersecurity</span></div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Location:</span> <span>Birgunj,
+                                    Nepal</span></div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Status:</span> <span
+                                    class="text-cyan-600 font-bold">Active</span></div>
+                        </div>
+                        <div class="flex gap-2 mb-0">
+                            <a href="https://www.facebook.com/baliram.keshari.315" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/+9779746819176" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-green-100 hover:bg-green-300 text-green-700 rounded-full shadow transition"
+                                title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/anand_ksri_/" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-pink-100 hover:bg-pink-300 text-pink-700 rounded-full shadow transition"
+                                title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/anand-keshari-505685316/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <hr class="w-3/4 border-t-2 border-cyan-200 my-3" />
+                        <a href="https://tcpioneer.org"
+                            class="text-cyan-500 text-xs font-mono underline hover:text-blue-700 transition mt-3 mb-1 block">https://tcpioneer.org</a>
+
+                    </div>
+                    <!-- Roshan Shah (green-cyan) -->
+                    <div class="group relative bg-white/60 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-green-400 p-7 flex flex-col items-center overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-green-400 hover:border-cyan-400 animate__animated animate__fadeInUp animate__fast max-w-md w-full min-h-[540px] mx-auto"
+                        style="animation-delay: 0.1s;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-green-300/20 via-cyan-200/10 to-white/10 z-0 pointer-events-none">
+                        </div>
+                        <span
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-green-400 to-cyan-400 shadow-lg border-4 border-white/80 text-white text-3xl font-extrabold drop-shadow-lg animate__animated animate__fadeInDown animate__faster">RS</span>
+                        <img src="../../images/members/roshan-sir.jpg" alt="Roshan Shah"
+                            class="w-28 h-28 rounded-full border-4 border-green-400 object-cover shadow-xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <h3
+                            class="text-2xl font-extrabold text-green-800 mb-1 tracking-tight drop-shadow flex items-center gap-2">
+                            Roshan Shah <span
+                                class="bg-gradient-to-tr from-green-400 to-cyan-400 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 shadow">Head</span>
+                        </h3>
+                        <span class="text-cyan-600 text-base font-semibold mb-2">Head of Operations</span>
+                        <div class="w-full flex flex-col items-center mb-2 mt-1">
+                            <span class="text-xs text-gray-500">Fun Fact: Loves teaching and trekking in the
+                                Himalayas!</span>
+                        </div>
+                        <div
+                            class="bg-white/70 border border-green-100 rounded-xl p-4 w-full text-left text-green-800 text-xs shadow-inner mb-2 flex flex-col gap-1">
+                            <div class="flex items-center gap-2"><span class="font-bold">ID:</span> <span>TCP-01</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Email:</span>
+                                <span>roshan@tcpioneer.org</span>
+                            </div>
+                            <!-- DOB removed -->
+                            <div class="flex items-center gap-2"><span class="font-bold">Skills:</span> <span>Web Dev,
+                                    Security</span></div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Location:</span> <span>Simra,
+                                    Nepal</span></div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Status:</span> <span
+                                    class="text-green-600 font-bold">Active</span></div>
+                        </div>
+                        <div class="flex gap-2 mb-0">
+                            <a href="https://www.facebook.com/rsn01" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/+918294562454" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-green-100 hover:bg-green-300 text-green-700 rounded-full shadow transition"
+                                title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/im_rsn01/" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-pink-100 hover:bg-pink-300 text-pink-700 rounded-full shadow transition"
+                                title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com/in/username3" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <hr class="w-3/4 border-t-2 border-green-200 my-3" />
+                        <a href="https://tcpioneer.org"
+                            class="text-green-500 text-xs font-mono underline hover:text-cyan-700 transition">https://tcpioneer.org</a>
+
+                    </div>
+                    <!-- Aaron Kalwar (purple-indigo) -->
+                    <div class="group relative bg-white/60 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-indigo-400 p-7 flex flex-col items-center overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-indigo-400 hover:border-purple-400 animate__animated animate__fadeInUp animate__fast max-w-md w-full min-h-[540px] mx-auto"
+                        style="animation-delay: 0.2s;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-purple-400/20 via-indigo-200/10 to-white/10 z-0 pointer-events-none">
+                        </div>
+                        <span
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-400 shadow-lg border-4 border-white/80 text-white text-3xl font-extrabold drop-shadow-lg animate__animated animate__fadeInDown animate__faster">AK</span>
+                        <img src="../../images/members/aaron-kalwar.jpg" alt="Aaron Kalwar"
+                            class="w-28 h-28 rounded-full border-4 border-indigo-400 object-cover shadow-xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <h3
+                            class="text-2xl font-extrabold text-indigo-800 mb-1 tracking-tight drop-shadow flex items-center gap-2">
+                            Aaron Kalwar <span
+                                class="bg-gradient-to-tr from-indigo-400 to-purple-400 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 shadow">Web
+                                Dev</span></h3>
+                        <span class="text-purple-600 text-base font-semibold mb-2">Web Developer</span>
+                        <div class="w-full flex flex-col items-center mb-2 mt-1">
+                            <span class="text-xs text-gray-500">Fun Fact: Youngest core member, passionate about
+                                networking!</span>
+                        </div>
+                        <div
+                            class="bg-white/70 border border-indigo-100 rounded-xl p-4 w-full text-left text-indigo-800 text-xs shadow-inner mb-2 flex flex-col gap-1">
+                            <div class="flex items-center gap-2"><span class="font-bold">ID:</span> <span>TCP-53</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Email:</span>
+                                <span>aaron@tcpioneer.org</span>
+                            </div>
+                            <!-- DOB removed -->
+                            <div class="flex items-center gap-2"><span class="font-bold">Skills:</span> <span>Web,
+                                    Networking</span></div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Location:</span> <span>Birgunj,
+                                    Nepal</span></div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Status:</span> <span
+                                    class="text-purple-600 font-bold">Active</span></div>
+                        </div>
+                        <div class="flex gap-2 mb-0">
+                            <a href="https://www.facebook.com/profile.php?id=61552811946273" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/9845785449" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-green-100 hover:bg-green-300 text-green-700 rounded-full shadow transition"
+                                title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://instagram.com/aaron__kalwar" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-pink-100 hover:bg-pink-300 text-pink-700 rounded-full shadow transition"
+                                title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aaron-kalwar-b10086373/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <hr class="w-3/4 border-t-2 border-indigo-200 my-3" />
+                        <a href="https://tcpioneer.org"
+                            class="text-indigo-500 text-xs font-mono underline hover:text-purple-700 transition">https://tcpioneer.org</a>
+
+                    </div>
+
+ <!-- Sandesh Adhikari -->
+                        <div class="group relative bg-white/60 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-slate-400 p-7 flex flex-col items-center overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-slate-400 hover:border-slate-500 animate__animated animate__fadeInUp animate__fast max-w-md w-full min-h-[540px] mx-auto"
+                            style="animation-delay: 0.6s;">
+                            <div class="absolute inset-0 bg-gradient-to-br from-slate-300/10 via-white/5 to-white/5 z-0 pointer-events-none"></div>
+                            <span
+                                class="absolute -top-7 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-slate-500 to-slate-400 shadow-lg border-4 border-white/80 text-white text-3xl font-extrabold drop-shadow-lg">SA</span>
+                            <img src="../../images/members/sandesh-adhikari.jpg" alt="Sandesh Adhikari"
+                                class="w-28 h-28 rounded-full border-4 border-slate-400 object-cover shadow-xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                            <h3 class="text-2xl font-extrabold text-slate-800 mb-1 tracking-tight drop-shadow flex items-center gap-2">
+                                Sandesh Adhikari<span class="bg-gradient-to-tr from-slate-400 to-slate-600 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 shadow">Core</span>
+                            </h3>
+                            <span class="text-slate-600 text-base font-semibold mb-2">President/Executive Director</span>
+                            <div class="w-full flex flex-col items-center mb-2 mt-1">
+                                <span class="text-xs text-gray-500">Fun Fact: Building Cyber Leaders for a Safer Digital Future</span>
+                            </div>
+                            <div class="bg-white/70 border border-slate-100 rounded-xl p-4 w-full text-left text-slate-800 text-xs shadow-inner mb-2 flex flex-col gap-1">
+                                <div class="flex items-center gap-2"><span class="font-bold">ID:</span> <span>TCP-64</span></div>
+                                <div class="flex items-center gap-2"><span class="font-bold">Email:</span> <span>sandesh@tcpioneer.org</span></div>
+                                <div class="flex items-center gap-2"><span class="font-bold">Skills:</span> <span>cybersecurity,Quality Assurance , Supportive</span></div>
+                                <div class="flex items-center gap-2"><span class="font-bold">Location:</span> <span>Kathmandu, Nepal</span></div>
+                                <div class="flex items-center gap-2"><span class="font-bold">Status:</span> <span class="text-slate-600 font-bold">Active</span></div>
+                            </div>
+                            <div class="flex gap-2 mb-0">
+                                <a href="https://www.facebook.com/sandesh.adhikari.729518" class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://wa.me/+9779811557742" class="w-10 h-10 flex items-center justify-center bg-green-100 hover:bg-green-300 text-green-700 rounded-full shadow transition" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://www.instagram.com/sandeshadhikari14/" class="w-10 h-10 flex items-center justify-center bg-pink-100 hover:bg-pink-300 text-pink-700 rounded-full shadow transition" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/sandesh-adhikari-3407b5315/" class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <hr class="w-3/4 border-t-2 border-slate-200 my-3" />
+                            <a href="https://tcpioneer.org" class="text-slate-500 text-xs font-mono underline hover:text-slate-700 transition">https://tcpioneer.org</a>
+
+                        </div>
+
+
+
+
+
+                    <!-- Sai Jayanth (pink-fuchsia) -->
+                    <div class="group relative bg-white/60 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-pink-400 p-7 flex flex-col items-center overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-pink-400 hover:border-fuchsia-400 animate__animated animate__fadeInUp animate__fast max-w-md w-full min-h-[540px] mx-auto"
+                        style="animation-delay: 0.3s;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-pink-400/20 via-fuchsia-200/10 to-white/10 z-0 pointer-events-none">
+                        </div>
+                        <span
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-pink-500 to-fuchsia-400 shadow-lg border-4 border-white/80 text-white text-3xl font-extrabold drop-shadow-lg animate__animated animate__fadeInDown animate__faster">SJ</span>
+                        <img src="../../images/members/sai-jayanth.jpeg" alt="Sai Jayanth"
+                            class="w-28 h-28 rounded-full border-4 border-pink-400 object-cover shadow-xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <h3
+                            class="text-2xl font-extrabold text-pink-800 mb-1 tracking-tight drop-shadow flex items-center gap-2">
+                            Sai Jayanth <span
+                                class="bg-gradient-to-tr from-pink-400 to-fuchsia-400 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 shadow">Pioneer</span>
+                        </h3>
+                        <span class="text-fuchsia-600 text-base font-semibold mb-2">Pioneer-in-Chief</span>
+                        <div class="w-full flex flex-col items-center mb-2 mt-1">
+                            <span class="text-xs text-gray-500">Fun Fact: Linux enthusiast and CTF lover!</span>
+                        </div>
+                        <div
+                            class="bg-white/70 border border-pink-100 rounded-xl p-4 w-full text-left text-pink-800 text-xs shadow-inner mb-2 flex flex-col gap-1">
+                            <div class="flex items-center gap-2"><span class="font-bold">ID:</span> <span>TCP-67</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Email:</span>
+                                <span>jayanth@tcpioneer.org</span>
+                            </div>
+                            <!-- DOB removed -->
+                            <div class="flex items-center gap-2"><span class="font-bold">Skills:</span>
+                                <span>Networking,
+                                    Linux</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Location:</span>
+                                <span>Bangalore,
+                                    India</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Status:</span> <span
+                                    class="text-fuchsia-600 font-bold">Active</span></div>
+                        </div>
+                        <div class="flex gap-2 mb-0">
+                            <a href="https://facebook.com/username4" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/916302139247" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-green-100 hover:bg-green-300 text-green-700 rounded-full shadow transition"
+                                title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/jayanth25_?utm_source=qr&igsh=ZDNhb2dld3FwaG9m"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-pink-100 hover:bg-pink-300 text-pink-700 rounded-full shadow transition"
+                                title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/sai-jayanth-066589242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <hr class="w-3/4 border-t-2 border-pink-200 my-3" />
+                        <a href="https://tcpioneer.org"
+                            class="text-pink-500 text-xs font-mono underline hover:text-fuchsia-700 transition">https://tcpioneer.org</a>
+
+                    </div>
+                    <!-- Naga Sai Akshay (orange-yellow) -->
+                    <div class="group relative bg-white/60 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-yellow-400 p-7 flex flex-col items-center overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-yellow-400 hover:border-orange-400 animate__animated animate__fadeInUp animate__fast max-w-md w-full min-h-[540px] mx-auto"
+                        style="animation-delay: 0.4s;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-yellow-300/20 via-orange-200/10 to-white/10 z-0 pointer-events-none">
+                        </div>
+                        <span
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-400 shadow-lg border-4 border-white/80 text-white text-3xl font-extrabold drop-shadow-lg animate__animated animate__fadeInDown animate__faster">NA</span>
+                        <img src="../../images/members/akshay.jpeg" alt="Naga Sai Akshay"
+                            class="w-28 h-28 rounded-full border-4 border-yellow-400 object-cover shadow-xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <h3
+                            class="text-2xl font-extrabold text-yellow-800 mb-1 tracking-tight drop-shadow flex items-center gap-2">
+                            Naga Sai Akshay <span
+                                class="bg-gradient-to-tr from-yellow-400 to-orange-400 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 shadow">Marketing</span>
+                        </h3>
+                        <span class="text-orange-600 text-base font-semibold mb-2">Marketing & PR</span>
+                        <div class="w-full flex flex-col items-center mb-2 mt-1">
+                            <span class="text-xs text-gray-500">Fun Fact: Enjoys public speaking and creative
+                                campaigns!</span>
+                        </div>
+                        <div
+                            class="bg-white/70 border border-yellow-100 rounded-xl p-4 w-full text-left text-yellow-800 text-xs shadow-inner mb-2 flex flex-col gap-1">
+                            <div class="flex items-center gap-2"><span class="font-bold">ID:</span> <span>TCP-72</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Email:</span>
+                                <span>akshay@tcpioneer.org</span>
+                            </div>
+                            <!-- DOB removed -->
+                            <div class="flex items-center gap-2"><span class="font-bold">Skills:</span> <span>Marketing,
+                                    PR</span></div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Location:</span>
+                                <span>Anantapur,
+                                    India</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Status:</span> <span
+                                    class="text-orange-600 font-bold">Active</span></div>
+                        </div>
+                        <div class="flex gap-2 mb-0">
+                            <a href="https://www.facebook.com/share/16aq9qxVjm/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/+918985596541" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-green-100 hover:bg-green-300 text-green-700 rounded-full shadow transition"
+                                title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/akshay___1506?utm_source=qr&igsh=d3U3aWo5OGlkYnR2"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-pink-100 hover:bg-pink-300 text-pink-700 rounded-full shadow transition"
+                                title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/vankadari-naga-sai-akshay-26137a176?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <hr class="w-3/4 border-t-2 border-yellow-200 my-3" />
+                        <a href="https://tcpioneer.org"
+                            class="text-yellow-500 text-xs font-mono underline hover:text-orange-700 transition">https://tcpioneer.org</a>
+
+                    </div>
+                    <!-- Trinesh Reddy (teal-emerald) -->
+                    <div class="group relative bg-white/60 backdrop-blur-2xl rounded-3xl shadow-2xl border-2 border-emerald-400 p-7 flex flex-col items-center overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-emerald-400 hover:border-teal-400 animate__animated animate__fadeInUp animate__fast max-w-md w-full min-h-[540px] mx-auto"
+                        style="animation-delay: 0.5s;">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-emerald-300/20 via-teal-200/10 to-white/10 z-0 pointer-events-none">
+                        </div>
+                        <span
+                            class="absolute -top-7 left-1/2 -translate-x-1/2 z-20 flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-tr from-emerald-400 to-teal-400 shadow-lg border-4 border-white/80 text-white text-3xl font-extrabold drop-shadow-lg animate__animated animate__fadeInDown animate__faster">TR</span>
+                        <img src="../../images/members/trinesh.jpeg" alt="Trinesh Reddy"
+                            class="w-28 h-28 rounded-full border-4 border-emerald-400 object-cover shadow-xl mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <h3
+                            class="text-2xl font-extrabold text-emerald-800 mb-1 tracking-tight drop-shadow flex items-center gap-2">
+                            Trinesh Reddy <span
+                                class="bg-gradient-to-tr from-emerald-400 to-teal-400 text-white text-xs font-bold px-2 py-0.5 rounded-full ml-1 shadow">Co-founder</span>
+                        </h3>
+                        <span class="text-teal-600 text-base font-semibold mb-2"> Co-founder & Security Analyst</span>
+                        <div class="w-full flex flex-col items-center mb-2 mt-1">
+                            <span class="text-xs text-gray-500">Fun Fact: Bug bounty hunter and cricket fan!</span>
+                        </div>
+                        <div
+                            class="bg-white/70 border border-emerald-100 rounded-xl p-4 w-full text-left text-emerald-800 text-xs shadow-inner mb-2 flex flex-col gap-1">
+                            <div class="flex items-center gap-2"><span class="font-bold">ID:</span> <span>TCP-74</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Email:</span>
+                                <span>trinesh@tcpioneer.org</span>
+                            </div>
+                            <!-- DOB removed -->
+                            <div class="flex items-center gap-2"><span class="font-bold">Skills:</span> <span>Ethical
+                                    Hacking, Security</span></div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Location:</span>
+                                <span>Hyderabad,
+                                    India</span>
+                            </div>
+                            <div class="flex items-center gap-2"><span class="font-bold">Status:</span> <span
+                                    class="text-teal-600 font-bold">Active</span></div>
+                        </div>
+                        <div class="flex gap-2 mb-0">
+                            <a href="https://facebook.com/username6" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://wa.me/+919398607030" target="_blank" rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-green-100 hover:bg-green-300 text-green-700 rounded-full shadow transition"
+                                title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/itz_trinesh_reddy/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-pink-100 hover:bg-pink-300 text-pink-700 rounded-full shadow transition"
+                                title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/y-trinesh-reddy-266bb424b/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="w-10 h-10 flex items-center justify-center bg-blue-100 hover:bg-blue-400 text-blue-700 rounded-full shadow transition"
+                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <hr class="w-3/4 border-t-2 border-emerald-200 my-3" />
+                        <a href="https://tcpioneer.org"
+                            class="text-emerald-500 text-xs font-mono underline hover:text-teal-700 transition">https://tcpioneer.org</a>
+
+                    </div>
+                       
+
+                        
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AOS JS Initialization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 800,
+            offset: 120,
+        });
+    </script>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-10 md:gap-8 border-b border-gray-700 pb-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-users-cog text-blue-400"></i> About Us</h3>
+                    <p class="text-gray-400 mb-4">We are <span class="font-bold text-blue-300">The Cyber Pioneer</span>,
+                        a community dedicated to educating and raising awareness about cybersecurity. Join us in
+                        exploring the ever-changing world of security and technology.</p>
+                    <div class="flex space-x-3 mt-4">
+                        <!-- Social Media Icons -->
+                        <a href="https://www.facebook.com/profile.php?id=61578731491248"
+                            class="group bg-blue-900/30 hover:bg-blue-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Facebook">
+                            <i class="fab fa-facebook-f text-xl text-blue-400 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/the-cyber-pioneer/"
+                            class="group bg-blue-800/30 hover:bg-blue-700 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl text-blue-300 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://wa.me/9779746819176"
+                            class="group bg-green-900/30 hover:bg-green-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="WhatsApp">
+                            <i class="fab fa-whatsapp text-xl text-green-400 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://t.me/tcpioneerorg"
+                            class="group bg-cyan-900/30 hover:bg-cyan-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Telegram">
+                            <i class="fab fa-telegram-plane text-xl text-cyan-300 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tcpioneerorg/"
+                            class="group bg-pink-900/30 hover:bg-pink-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Instagram">
+                            <i class="fab fa-instagram text-xl text-pink-400 group-hover:text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-link text-green-400"></i> Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-home"></i> Home</a></li>
+                        <li><a href="/about/organization/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="/faq/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="/contact/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-phone-alt"></i> Contact</a></li>
+                        <li><a href="/disclaimer/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-exclamation-triangle"></i> Disclaimer</a></li>
+                        <li><a href="/joinus/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-user-plus"></i> Join Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-envelope-open-text text-cyan-400"></i> Contact Us</h3>
+                    <p class="text-gray-400 mb-4">Feel free to reach out for any questions or collaborations.</p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2"><i
+                            class="fas fa-phone-alt text-green-400"></i> <span>+977 9746819176</span></p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2"><i
+                            class="fas fa-envelope text-yellow-400"></i> <span>contact@tcpioneer.org</span></p>
+                    <p class="text-gray-400 flex items-center gap-2"><i class="fas fa-map-marker-alt text-pink-400"></i>
+                        <span>Birgunj, Nepal</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="mt-8 pt-4 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 <span class="text-blue-400 font-bold">The Cyber
+                        Pioneer</span>. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-4">Developed by <a href="http://anandkeshari.com.np" target="_blank"
+                        class="text-blue-300 hover:text-white transition-colors font-semibold">Anand Keshari</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- SwiperJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>
