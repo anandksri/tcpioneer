@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.tcpioneer.org/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Pages -->
+  <url>
+    <loc>https://www.tcpioneer.org/about/organization/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/about/team/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/about/services/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/about/events/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Resources -->
+  <url>
+    <loc>https://www.tcpioneer.org/resources/blogs/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/resources/tools/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/resources/guides/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/resources/roadmaps/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Other Important Pages -->
+  <url>
+    <loc>https://www.tcpioneer.org/faq/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/contact/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/joinus/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.tcpioneer.org/disclaimer/</loc>
+    <lastmod>2025-08-28</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Setup -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="The Cyber Pioneer Team">
+    <meta name="language" content="en">
+
+    <!-- Title & SEO -->
+    <title>Our Services - The Cyber Pioneer</title>
+    <meta name="description"
+        content="Explore the cybersecurity services, training, and awareness programs offered by The Cyber Pioneer.">
+    <link rel="canonical" href="https://www.tcpioneer.org/about/services/">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0f172a">
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Our Services - The Cyber Pioneer">
+    <meta property="og:description"
+        content="Explore the cybersecurity services, training, and awareness programs offered by The Cyber Pioneer.">
+    <meta property="og:url" content="https://www.tcpioneer.org/about/services/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Cyber Pioneer">
+    <meta property="og:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our Services - The Cyber Pioneer">
+    <meta name="twitter:description"
+        content="Explore the cybersecurity services, training, and awareness programs offered by The Cyber Pioneer.">
+    <meta name="twitter:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Cybersecurity Training & Awareness",
+  "url": "https://www.tcpioneer.org/about/services/",
+  "description": "Explore the cybersecurity services, training, and awareness programs offered by The Cyber Pioneer.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Cyber Pioneer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tcpioneer.org/images/nav-logo.png"
+    }
+  }
+}
+    </script>
+
+
+    <!-- Styles & Scripts -->
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- SwiperJS CSS for carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="bg-gradient-to-b from-gray-50 to-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo + Org Name -->
+                <div class="flex-shrink-0">
+                    <a href="/" class="flex items-center gap-2 group">
+                        <img class="h-14 w-14 transition-transform duration-300 ease-in-out hover:scale-110 bg-white"
+                            src="../../images/nav-logo.png" alt="Cyber Pioneer Logo">
+                        <span class="hidden sm:inline text-xl font-bold text-blue-700 tracking-tight ml-2">The Cyber
+                            Pioneer</span>
+                    </a>
+                </div>
+                <!-- Desktop Nav (show on lg and up) -->
+                <ul class="hidden lg:flex items-center space-x-1 lg:space-x-2 xl:space-x-3 text-base lg:text-lg">
+                    <!-- Home -->
+                    <li>
+                        <a href="/"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition  hover:shadow-md">
+                            <i class="fas fa-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-blue-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-info-circle"></i> <span>About</span> <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-2 w-52 bg-white border border-blue-100 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <li><a href="/about/organization"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Organization</a>
+                            </li>
+                            <li><a href="/about/team"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Team</a>
+                            </li>
+                            <li><a href="/about/services"
+                                    class="block px-5 py-3 text-blue-700 hover:bg-blue-50 hover:text-blue-900">Services</a>
+                            </li>
+                            <li><a href="/about/events"
+                                    class="block px-5 py-3 text-gray-600 hover:bg-blue-50 hover:text-blue-900">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-book"></i> <span>Resources</span> <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-2 w-52 bg-white border border-blue-100 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <li><a href="/resources/blogs"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Blogs</a>
+                            </li>
+                            <li><a href="/resources/tools"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Tools</a>
+                            </li>
+                            <li><a href="/resources/guides"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Guides</a>
+                            </li>
+                            <li><a href="/resources/roadmaps"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Roadmaps</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Other Links -->
+                    <li>
+                        <a href="/faq"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-question-circle"></i> <span>FAQ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-phone-alt"></i> <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/joinus"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-user-plus"></i> <span>Join Us</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Mobile Menu Toggle (show on sm and md, hide on lg and up) -->
+                <button id="mobile-menu-toggle"
+                    class="lg:hidden text-blue-700 text-3xl hover:bg-blue-100 focus:outline-none transition">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed inset-0 w-full h-full bg-gradient-to-b from-white via-blue-50 to-white z-50 hidden overflow-y-auto transition-transform duration-300 transform -translate-x-full"
+            style="will-change: transform;">
+            <div class="w-full h-full flex flex-col pt-8 pb-8 px-4 sm:px-8 md:px-14 relative shadow-2xl animate-none"
+                id="mobile-menu-inner">
+                <div class="flex items-center justify-between mb-6 px-1">
+                    <a href="/" class="flex items-center gap-2">
+                        <img class="h-12 w-12" src="../../images/nav-logo.png" alt="Cyber Pioneer Logo">
+                        <span
+                            class="text-xl font-extrabold text-blue-700 tracking-tight font-mono drop-shadow whitespace-nowrap">The
+                            Cyber Pioneer</span>
+                    </a>
+                    <button id="mobile-menu-close"
+                        class="ml-2 flex items-center justify-center w-11 h-11 text-2xl text-blue-700 hover:text-blue-900 bg-blue-50 rounded-full shadow-lg z-50 border border-blue-200 transition-all duration-200 focus:outline-none">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="flex flex-col gap-1 w-full max-w-md mx-auto mt-2">
+
+                    <!-- Home -->
+                    <li><a href="/"
+                            class="flex items-center gap-2 px-4 py-2 rounded-xl text-gray-600 font-semibold hover:bg-blue-100 transition"><i
+                                class="fas fa-home"></i> Home</a></li>
+
+                    <!-- About -->
+                    <li>
+                        <button
+                            class="flex items-center gap-2 w-full px-4 py-2 rounded-xl text-blue-700 font-semibold hover:bg-blue-100 transition"
+                            onclick="document.getElementById('mobile-about').classList.toggle('hidden')">
+                            <i class="fas fa-info-circle"></i> About <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul id="mobile-about" class="hidden flex-col ml-6 mt-1">
+                            <li><a href="/about/organization"
+                                    class="block px-4 py-2 rounded hover:bg-blue-50">Organization</a></li>
+                            <li><a href="/about/team" class="block px-4 py-2 rounded hover:bg-blue-50">Team</a></li>
+                            <li><a href="/about/services"
+                                    class="block px-4 py-2 text-blue-600 rounded hover:bg-blue-50">Services</a>
+                            </li>
+                            <li><a href="/about/events" class="block px-4 py-2  rounded hover:bg-blue-50">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Resources -->
+                    <li>
+                        <button
+                            class="flex items-center gap-2 w-full px-4 py-2 rounded-xl text-gray-700 font-semibold hover:bg-blue-100 transition"
+                            onclick="document.getElementById('mobile-resources').classList.toggle('hidden')">
+                            <i class="fas fa-book"></i> Resources <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul id="mobile-resources" class="hidden flex-col ml-6 mt-1">
+                            <li><a href="/resources/blogs" class="block px-4 py-2 rounded hover:bg-blue-50">Blogs</a>
+                            </li>
+                            <li><a href="/resources/tools" class="block px-4 py-2 rounded hover:bg-blue-50">Tools</a>
+                            </li>
+
+                            <li><a href="/resources/guides" class="block px-4 py-2 rounded hover:bg-blue-50">Guides</a>
+                            </li>
+                            <li><a href="/resources/roadmaps"
+                                    class="block px-4 py-2 rounded hover:bg-blue-50">Roadmaps</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Others -->
+                    <li><a href="/faq"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="/contact"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="/joinus"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-user-plus"></i> Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.getElementById('mobile-menu-toggle');
+                const menu = document.getElementById('mobile-menu');
+                const menuInner = document.getElementById('mobile-menu-inner');
+                const menuClose = document.getElementById('mobile-menu-close');
+                function openMenu() {
+                    menu.classList.remove('hidden');
+                    setTimeout(() => {
+                        menu.classList.remove('-translate-x-full');
+                        menu.classList.add('translate-x-0');
+                    }, 10);
+                    document.body.classList.add('overflow-hidden');
+                }
+                function closeMenu() {
+                    menu.classList.remove('translate-x-0');
+                    menu.classList.add('-translate-x-full');
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }, 300);
+                }
+                if (menuToggle && menu) {
+                    menuToggle.addEventListener('click', openMenu);
+                }
+                if (menuClose && menu) {
+                    menuClose.addEventListener('click', closeMenu);
+                }
+                menu && menu.addEventListener('click', function (e) {
+                    if (e.target === menu) {
+                        closeMenu();
+                    }
+                });
+            });
+        </script>
+    </nav>
+
+    <!-- Main Services Section -->
+    <main class="pt-20">
+
+
+        <!-- Services Grid -->
+        <section class="max-w-7xl mx-auto px-6 pb-10">
+
+
+            <div class="text-center pt-20 pb-10">
+                <h1 class="text-4xl font-bold text-blue-800 flex items-center justify-center">
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-400 to-cyan-500 text-white shadow-lg">
+                        <i class="fas fa-cogs text-2xl"></i>
+                    </span>
+                    Our Services
+                </h1>
+                <p class="mt-4 text-xl text-gray-600">We provide cybersecurity education, technical services, and
+                    personal support — all in one platform to empower students, schools, and communities.</p>
+            </div>
+
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Workshops & Bootcamps -->
+                <div class="bg-gradient-to-br from-blue-50 via-cyan-50 to-purple-50 rounded-xl shadow-xl p-6 border border-blue-100 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-400 to-cyan-500 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-blue-700">Workshops & Bootcamps</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">Hands-on sessions on ethical hacking, forensics,
+                        and cyber defense to build practical skills.</p>
+                </div>
+                <!-- Awareness Campaigns -->
+                <div class="bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50 rounded-xl shadow-xl p-6 border border-yellow-100 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-yellow-400 to-orange-400 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-bullhorn"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-yellow-700">Awareness Campaigns</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">Cyber safety drives in schools and colleges to
+                        spread awareness about scams and safe practices.</p>
+                </div>
+                <!-- CTF Competitions -->
+                <div class="bg-gradient-to-br from-pink-50 via-fuchsia-50 to-purple-50 rounded-xl shadow-xl p-6 border border-pink-100 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-pink-400 to-fuchsia-500 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-flag"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-pink-700">CTF Competitions</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">Gamified hacking challenges to sharpen
+                        problem-solving and cybersecurity skills.</p>
+                </div>
+                <!-- Community Meetups -->
+                <div class="bg-gradient-to-br from-green-50 via-lime-50 to-yellow-50 rounded-xl shadow-xl p-6 border border-green-100 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-green-400 to-yellow-400 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-users-cog"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-green-700">Community Meetups</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">Bringing together learners and experts through
+                        interactive meetups and networking events.</p>
+                </div>
+                <!-- Institutional Partnerships -->
+                <div class="bg-gradient-to-br from-purple-50 via-fuchsia-50 to-pink-50 rounded-xl shadow-xl p-6 border border-purple-100 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-purple-400 to-fuchsia-500 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-handshake"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-purple-700">Institutional Partnerships</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">Collaborating with schools and colleges to
+                        integrate cybersecurity into their systems.</p>
+                </div>
+                <!-- Online Resources -->
+                <div class="bg-gradient-to-br from-cyan-50 via-blue-50 to-green-50 rounded-xl shadow-xl p-6 border border-cyan-100 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-400 to-green-400 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-globe"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-cyan-700">Online Resources</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">Free tools, cheat sheets, and study roadmaps to
+                        help you practice and grow anytime.</p>
+                </div>
+                <!-- Web Development -->
+                <div class="bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-50 rounded-xl shadow-xl p-6 border border-indigo-100 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="600">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-indigo-400 to-blue-500 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-code"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-indigo-700">Web Development</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">We build secure, modern, and responsive websites
+                        for schools, startups, and communities.</p>
+                </div>
+                <!-- Video Editing -->
+                <div class="bg-gradient-to-br from-pink-50 via-fuchsia-50 to-purple-50 rounded-xl shadow-xl p-6 border border-pink-200 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="700">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-pink-400 to-fuchsia-500 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-video"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-pink-700">Video Editing</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">High-quality video editing for seminars,
+                        campaigns, and social media content.</p>
+                </div>
+                <!-- Photo Editing -->
+                <div class="bg-gradient-to-br from-green-50 via-lime-50 to-yellow-50 rounded-xl shadow-xl p-6 border border-green-200 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="800">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-green-400 to-yellow-400 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-image"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-green-700">Photo Editing</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">Creative poster designs, event highlights, and
+                        professional photo edits.</p>
+                </div>
+                <!-- Personal Cyber Support -->
+                <div class="bg-gradient-to-br from-blue-50 via-cyan-50 to-purple-50 rounded-xl shadow-xl p-6 border border-blue-200 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="900">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-400 to-cyan-500 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-shield-virus"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-blue-700">Personal Cyber Support</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">If anyone faces cyberbullying, account hacks, or
+                        online abuse, we provide direct support and solutions.</p>
+                </div>
+                <!-- Cyber Clubs Setup -->
+                <div class="bg-gradient-to-br from-teal-50 via-cyan-50 to-green-50 rounded-xl shadow-xl p-6 border border-teal-200 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="1000">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-teal-400 to-green-400 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-users"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-teal-700">Cyber Clubs Setup</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">We help schools and colleges establish Cyber
+                        Clubs where students can collaborate, learn, and organize awareness programs.</p>
+                </div>
+                <!-- Certification Programs -->
+                <div class="bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-50 rounded-xl shadow-xl p-6 border border-rose-200 group hover:scale-105 hover:shadow-2xl transition-all duration-300 animate__animated animate__fadeInUp animate__fast mb-4"
+                    data-aos="fade-up" data-aos-delay="1100">
+                    <div class="flex items-center justify-center gap-4 mb-5">
+                        <span
+                            class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-rose-400 to-pink-400 text-white text-2xl shadow-md animate-bounce-slow group-hover:animate-bounce">
+                            <i class="fas fa-certificate"></i>
+                        </span>
+                        <h3 class="text-2xl font-bold text-rose-700">Certification Programs</h3>
+                    </div>
+                    <p class="text-gray-700 text-center text-base mt-2">Short-term training and certification programs
+                        designed for students and professionals to validate their cybersecurity knowledge and practical
+                        skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section
+            class="pt-20 pb-10 bg-gradient-to-r from-blue-800 via-green-500 to-cyan-500 text-white text-center relative overflow-hidden "
+            data-aos="zoom-in">
+            <div
+                class="absolute inset-0 bg-gradient-to-br from-white/10 via-blue-200/20 to-green-200/20 backdrop-blur-xl rounded-2xl border-2 border-white/20 shadow-xl max-w-xl mx-auto left-0 right-0 top-6 h-4/5 z-0 pointer-events-none">
+            </div>
+            <div
+                class="relative z-10 max-w-xl mx-auto px-4 py-6 rounded-2xl bg-white/10 shadow-xl border border-white/20 backdrop-blur-md animate__animated animate__fadeInUp animate__faster">
+                <div class="flex flex-col items-center gap-2">
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-600 to-green-400 shadow-lg mb-1 animate__animated animate__pulse animate__infinite animate__slower">
+                        <i class="fas fa-hands-helping text-2xl text-white drop-shadow"></i>
+                    </span>
+                    <h2 class="text-2xl font-extrabold mb-1 text-white drop-shadow-lg">Need Help or Want to Collaborate?
+                    </h2>
+                    <p class="mb-4 text-base text-white/90">From building websites to protecting your digital identity —
+                        we’re here for you.</p>
+                    <a href="../../contact/"
+                        class="bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full font-bold shadow-lg hover:from-blue-500 hover:to-green-400 hover:scale-105 transition-all duration-300 text-base tracking-wide border-2 border-white/20 flex items-center gap-2 animate__animated animate__pulse animate__infinite animate__slower">
+                        <i class="fas fa-paper-plane"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-10 md:gap-8 border-b border-gray-700 pb-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-users-cog text-blue-400"></i> About Us</h3>
+                    <p class="text-gray-400 mb-4">We are <span class="font-bold text-blue-300">The Cyber Pioneer</span>,
+                        a community dedicated to educating and raising awareness about cybersecurity. Join us in
+                        exploring the ever-changing world of security and technology.</p>
+                    <div class="flex space-x-3 mt-4">
+                        <!-- Social Media Icons -->
+                        <a href="https://www.facebook.com/profile.php?id=61578731491248"
+                            class="group bg-blue-900/30 hover:bg-blue-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Facebook">
+                            <i class="fab fa-facebook-f text-xl text-blue-400 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/the-cyber-pioneer/"
+                            class="group bg-blue-800/30 hover:bg-blue-700 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl text-blue-300 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://wa.me/9779746819176"
+                            class="group bg-green-900/30 hover:bg-green-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="WhatsApp">
+                            <i class="fab fa-whatsapp text-xl text-green-400 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://t.me/tcpioneerorg"
+                            class="group bg-cyan-900/30 hover:bg-cyan-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Telegram">
+                            <i class="fab fa-telegram-plane text-xl text-cyan-300 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tcpioneerorg/"
+                            class="group bg-pink-900/30 hover:bg-pink-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Instagram">
+                            <i class="fab fa-instagram text-xl text-pink-400 group-hover:text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-link text-green-400"></i> Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-home"></i> Home</a></li>
+                        <li><a href="/about/organization/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="/faq/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="/contact/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-phone-alt"></i> Contact</a></li>
+                        <li><a href="/disclaimer/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-exclamation-triangle"></i> Disclaimer</a></li>
+                        <li><a href="/joinus/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-user-plus"></i> Join Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-envelope-open-text text-cyan-400"></i> Contact Us</h3>
+                    <p class="text-gray-400 mb-4">Feel free to reach out for any questions or collaborations.</p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2"><i
+                            class="fas fa-phone-alt text-green-400"></i> <span>+977 9746819176</span></p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2"><i
+                            class="fas fa-envelope text-yellow-400"></i> <span>contact@tcpioneer.org</span></p>
+                    <p class="text-gray-400 flex items-center gap-2"><i class="fas fa-map-marker-alt text-pink-400"></i>
+                        <span>Birgunj, Nepal</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="mt-8 pt-4 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 <span class="text-blue-400 font-bold">The Cyber
+                        Pioneer</span>. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-4">Developed by <a href="http://anandkeshari.com.np" target="_blank"
+                        class="text-blue-300 hover:text-white transition-colors font-semibold">Anand Keshari</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <!-- SwiperJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+</body>
+
+</html>

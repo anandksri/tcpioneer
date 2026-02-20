@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pioneer Hackfeast 2025 — Galaxy Edition</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- Fullscreen galaxy canvas (behind site content) -->
+    <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+
+  
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center gap-3">
+                    <img src="../images/nav-logo.png" alt="TCPioneer" class="h-10 w-auto rounded-md bg-black/20 p-1" />
+                    <div>
+                        <a href="#"
+                            class="text-lg font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-blue-400">Pioneer
+                            Hackfeast</a>
+                        <div class="text-xs muted -mt-1">Birgunj • Dec 2025</div>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex items-center gap-6 text-sm">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#features">Features</a>
+                    <a class="nav-link" href="#schedule">Schedule</a>
+                    <a class="nav-link" href="#speakers">Speakers</a>
+                    <a class="nav-link" href="#register">Register</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <a href="/" class="btn btn-primary hidden md:inline-flex"><i
+                            class="fa-solid fa-rocket"></i><span>Main site</span></a>
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-white/3"><i
+                            class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile nav (hidden by default) -->
+        <div id="mobileMenu" class="md:hidden hidden border-t border-white/5">
+            <div class="px-4 py-3 flex flex-col gap-2">
+                <a href="#about" class="py-2">About</a>
+                <a href="#features" class="py-2">Features</a>
+                <a href="#schedule" class="py-2">Schedule</a>
+                <a href="#speakers" class="py-2">Speakers</a>
+                <a href="#register" class="py-2">Register</a>
+                <a href="#contact" class="py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main class="relative z-10">
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7">
+                    <div data-aos="fade-up">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
+                            Pioneer Hackfeast <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">2025</span>
+                        </h1>
+                        <p class="mt-4 text-slate-300 max-w-2xl">A galaxy of hackers, builders & learners — join
+                            Birgunj’s premier cybersecurity event with hands-on workshops, CTFs, mentorship, and
+                            prizes. Beginners welcome.</p>
+
+                        <!-- Organized / Partner badges -->
+                        <div class="mt-4 flex items-center gap-3">
+                            <div class="glass p-2 rounded-lg inline-flex items-center gap-3">
+                                <img src="../images/partners/nav-logo.png" alt="The Cyber Pioneer"
+                                    class="h-8 w-auto rounded-sm" />
+                                <div class="text-sm">
+                                    <div class="font-semibold">Organized by</div>
+                                    <div class="text-xs muted">The Cyber Pioneer</div>
+                                </div>
+                            </div>
+
+                            <div class="glass p-2 rounded-lg inline-flex items-center gap-3">
+                                <img src="../images/partners/y3ti@sec.png" alt="Y3ti@Sec"
+                                    class="h-8 w-auto rounded-sm" />
+                                <div class="text-sm">
+                                    <div class="font-semibold">CTF Partner</div>
+                                    <div class="text-xs muted">Y3ti@Sec</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <a href="#register" class="btn btn-primary"><i
+                                    class="fa-solid fa-user-plus"></i><span>Register Now</span></a>
+                            <a href="#features"
+                                class="btn btn-secondary px-4 py-2 rounded-full border border-white/6 glass text-sm inline-flex items-center gap-2"><i
+                                    class="fa-solid fa-magnifying-glass"></i> Learn More</a>
+                        </div>
+
+                        <div class="mt-6 flex flex-wrap gap-4">
+                            <div class="glass p-4 rounded-xl flex items-center gap-3">
+                                <div class="text-2xl text-cyan-300"><i class="fa-solid fa-trophy"></i></div>
+                                <div>
+                                    <div class="text-sm font-semibold">Prizes</div>
+                                    <div class="text-xs muted">Cash rewards & certificates</div>
+                                </div>
+                            </div>
+
+                            <div class="glass p-4 rounded-xl flex items-center gap-3">
+                                <div class="text-2xl text-amber-300"><i class="fa-solid fa-people-group"></i></div>
+                                <div>
+                                    <div class="text-sm font-semibold">Mentorship</div>
+                                    <div class="text-xs muted">Speed mentoring & internships</div>
+                                </div>
+                            </div>
+
+                            <div class="glass p-4 rounded-xl flex items-center gap-3">
+                                <div class="text-2xl text-pink-300"><i class="fa-solid fa-camera-retro"></i></div>
+                                <div>
+                                    <div class="text-sm font-semibold">Media</div>
+                                    <div class="text-xs muted">Highlights & reels</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="mt-4 flex gap-3">
+                        <div class="glass p-3 rounded-xl flex-1 text-center">
+                            <div class="text-sm muted">Event</div>
+                            <div class="font-semibold mt-1">Dec 1, 2025</div>
+                        </div>
+                        <div class="glass p-3 rounded-xl flex-1 text-center">
+                            <div class="text-sm muted">Venue</div>
+                            <div class="font-semibold mt-1">Birgunj University Hall</div>
+                        </div>
+                    </div>
+                    <div class="mt-3 grid grid-cols-2 gap-3">
+                        <div class="glass p-3 rounded-xl text-center">
+                            <div class="text-sm muted">Doors</div>
+                            <div class="font-semibold mt-1">08:30 AM</div>
+                            <div class="text-xs muted mt-1">Opening ceremony starts 09:15 AM</div>
+                        </div>
+                        <div class="glass p-3 rounded-xl text-center">
+                            <div class="text-sm muted">Tickets</div>
+                            <div class="font-semibold mt-1">Free / RSVP</div>
+                            <a href="#register" class="block mt-2 text-sm btn btn-secondary mx-auto w-fit">Register</a>
+                        </div>
+                        <div class="glass p-3 rounded-xl text-center">
+                            <div class="text-sm muted">Capacity</div>
+                            <div class="font-semibold mt-1">~250 seats</div>
+                            <div class="text-xs muted mt-1">First-come, first-served</div>
+                        </div>
+                        <div class="glass p-3 rounded-xl text-center">
+                            <div class="text-sm muted">Map</div>
+                            <div class="font-semibold mt-1">Birgunj University</div>
+                            <a href="https://maps.google.com?q=Birgunj+University" target="_blank" rel="noopener"
+                                class="block mt-2 text-sm btn btn-icon"> <i
+                                    class="fa-solid fa-map-location-dot"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-2xl font-bold">About Pioneer Hackfeast</h2>
+                    <p class="mt-3 muted max-w-xl">Pioneer Hackfeast is Birgunj’s flagship cybersecurity meetup
+                        bringing students, professionals and hobbyists together for hands-on learning, competitions
+                        and networking. Expect workshops, a CTF track, Red vs Blue demos, and lightning mentorship
+                        sessions.</p>
+
+                    <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <li class="glass p-3 rounded-lg"><i class="fa-solid fa-graduation-cap mr-2 accent"></i>
+                            Beginner-friendly workshops</li>
+                        <li class="glass p-3 rounded-lg"><i class="fa-solid fa-lock mr-2 accent"></i> Practical
+                            cyber labs</li>
+                        <li class="glass p-3 rounded-lg"><i class="fa-solid fa-people-arrows mr-2 accent"></i>
+                            Community networking</li>
+                        <li class="glass p-3 rounded-lg"><i class="fa-solid fa-medal mr-2 accent"></i> Trophies &
+                            certificates</li>
+                    </ul>
+                </div>
+
+                <div data-aos="fade-left">
+                    <!-- Placeholder visual — replace with real event image -->
+                    <div class="glass rounded-2xl p-4">
+                        <img src="images/hero-event.jpg" alt="Event snapshot" class="rounded-xl shadow-inner" />
+                        <div class="mt-3 muted text-sm">Highlights from last year's events — workshops, speaker
+                            sessions & CTF.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section id="features" class="bg-black/20 py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8" data-aos="fade-up">
+                    <h3 class="text-xl font-semibold">What you'll get</h3>
+                    <p class="muted mt-2 max-w-2xl mx-auto">A jam-packed day of learning, competition, mentoring and
+                        prizes.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="glass p-6 rounded-xl" data-aos="zoom-in">
+                        <div class="text-3xl text-cyan-300 mb-3"><i class="fa-solid fa-chalkboard-user"></i></div>
+                        <h4 class="font-semibold">Workshops</h4>
+                        <p class="muted mt-2 text-sm">Intro to web hacking, binary exploitation & forensics labs.
+                        </p>
+                    </div>
+
+                    <div class="glass p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="80">
+                        <div class="text-3xl text-amber-300 mb-3"><i class="fa-solid fa-flag-checkered"></i></div>
+                        <h4 class="font-semibold">CTF</h4>
+                        <p class="muted mt-2 text-sm">Jeopardy-style CTF and quick challenges for all skill levels.
+                        </p>
+                    </div>
+
+                    <div class="glass p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="160">
+                        <div class="text-3xl text-emerald-300 mb-3"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4 class="font-semibold">Red vs Blue</h4>
+                        <p class="muted mt-2 text-sm">Live defense vs attack demonstrations and analysis.</p>
+                    </div>
+
+                    <div class="glass p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="240">
+                        <div class="text-3xl text-pink-300 mb-3"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <h4 class="font-semibold">Networking</h4>
+                        <p class="muted mt-2 text-sm">Mentorship tables, hiring leads & internships.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule -->
+        <section id="schedule" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="text-center mb-6" data-aos="fade-up">
+                <h3 class="text-xl font-semibold">Event Schedule</h3>
+                <p class="muted mt-2">A snapshot timeline — subject to final updates.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="glass p-5 rounded-xl" data-aos="fade-right">
+                    <div class="text-sm muted">09:00</div>
+                    <div class="font-semibold">Registration & Breakfast</div>
+                    <div class="mt-2 text-sm muted">Badge pickup, welcome coffee and networking.</div>
+                </div>
+
+                <div class="glass p-5 rounded-xl" data-aos="fade-up">
+                    <div class="text-sm muted">10:00</div>
+                    <div class="font-semibold">Opening & Keynote</div>
+                    <div class="mt-2 text-sm muted">Welcome note and keynote on career in cybersecurity.</div>
+                </div>
+
+                <div class="glass p-5 rounded-xl" data-aos="fade-left">
+                    <div class="text-sm muted">11:30</div>
+                    <div class="font-semibold">Workshops & CTF</div>
+                    <div class="mt-2 text-sm muted">Parallel hands-on labs and CTF tracks.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Speakers -->
+        <section id="speakers" class="bg-black/10 py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-semibold">Speakers & Mentors</h3>
+                    <p class="muted mt-2">Local and guest speakers from industry and academia.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Speaker card (repeat/replace) -->
+                    <div class="glass p-4 rounded-xl text-center" data-aos="flip-left">
+                        <img src="images/speakers/speaker1.jpg" alt="Speaker 1"
+                            class="rounded-full mx-auto h-28 w-28 object-cover border border-white/6" />
+                        <div class="font-semibold mt-3">Asha K.</div>
+                        <div class="muted text-sm">CTF Coach</div>
+                    </div>
+
+                    <div class="glass p-4 rounded-xl text-center" data-aos="flip-left" data-aos-delay="80">
+                        <img src="images/speakers/speaker2.jpg" alt="Speaker 2"
+                            class="rounded-full mx-auto h-28 w-28 object-cover border border-white/6" />
+                        <div class="font-semibold mt-3">Rahul P.</div>
+                        <div class="muted text-sm">Web Sec</div>
+                    </div>
+
+                    <div class="glass p-4 rounded-xl text-center" data-aos="flip-left" data-aos-delay="160">
+                        <img src="images/speakers/speaker3.jpg" alt="Speaker 3"
+                            class="rounded-full mx-auto h-28 w-28 object-cover border border-white/6" />
+                        <div class="font-semibold mt-3">Mina S.</div>
+                        <div class="muted text-sm">Forensics</div>
+                    </div>
+
+                    <div class="glass p-4 rounded-xl text-center" data-aos="flip-left" data-aos-delay="240">
+                        <img src="images/speakers/speaker4.jpg" alt="Speaker 4"
+                            class="rounded-full mx-auto h-28 w-28 object-cover border border-white/6" />
+                        <div class="font-semibold mt-3">Sudeep R.</div>
+                        <div class="muted text-sm">Incident Response</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <h3 class="text-center text-lg font-semibold" data-aos="fade-up">Sponsors & Partners</h3>
+            <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-6 items-center">
+                <div class="glass p-3 rounded-lg text-center"><img src="images/partners/nav-logo.png" alt="partner"
+                        class="mx-auto h-10" /></div>
+                <div class="glass p-3 rounded-lg text-center"><img src="images/partners/y3ti@sec.png" alt="partner"
+                        class="mx-auto h-10" /></div>
+                <div class="glass p-3 rounded-lg text-center"><img src="images/partners/sponsor3.png" alt="partner"
+                        class="mx-auto h-10" /></div>
+                <div class="glass p-3 rounded-lg text-center"><img src="images/partners/sponsor4.png" alt="partner"
+                        class="mx-auto h-10" /></div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="bg-black/15 py-10">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <h3 class="text-center text-lg font-semibold" data-aos="fade-up">FAQ</h3>
+                <div class="mt-6 space-y-3">
+                    <details class="glass p-4 rounded-md" data-aos="fade-up">
+                        <summary class="font-semibold cursor-pointer">Who can join?</summary>
+                        <div class="mt-2 muted text-sm">Students, professionals and hobbyists — everyone is welcome.
+                        </div>
+                    </details>
+                    <details class="glass p-4 rounded-md" data-aos="fade-up" data-aos-delay="80">
+                        <summary class="font-semibold cursor-pointer">Do I need prior experience?</summary>
+                        <div class="mt-2 muted text-sm">No — we have beginner-friendly tracks and mentors available.
+                        </div>
+                    </details>
+                    <details class="glass p-4 rounded-md" data-aos="fade-up" data-aos-delay="160">
+                        <summary class="font-semibold cursor-pointer">Is there a registration fee?</summary>
+                        <div class="mt-2 muted text-sm">TBD — check announcements. Scholarships available for select
+                            students.</div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Register Section -->
+        <section id="register" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="glass p-6 rounded-2xl shadow-lg" data-aos="zoom-in">
+                <h3 class="text-xl font-semibold">Complete Registration</h3>
+                <p class="muted mt-2">Fill the form below to secure your spot (this demo does client-side validation
+                    only).</p>
+
+                <form action="register.php" method="POST" id="registrationForm" class="mt-4 grid grid-cols-1 gap-3">
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <input id="name" required placeholder="Full name"
+                            class="p-3 rounded-lg bg-black/40 border border-white/6" />
+                        <input id="email" type="email" required placeholder="Email"
+                            class="p-3 rounded-lg bg-black/40 border border-white/6" />
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <input id="college" placeholder="College / Organization"
+                            class="p-3 rounded-lg bg-black/40 border border-white/6" />
+                        <input id="phone" placeholder="Phone"
+                            class="p-3 rounded-lg bg-black/40 border border-white/6" />
+                    </div>
+
+                    <select id="type" class="p-3 rounded-lg bg-black/40 border border-white/6">
+                        <option value="individual">Individual</option>
+                        <option value="team">Team (up to 3)</option>
+                        <option value="observer">Observer</option>
+                    </select>
+
+                    <textarea id="message" rows="3" placeholder="Message (optional)"
+                        class="p-3 rounded-lg bg-black/40 border border-white/6"></textarea>
+
+                    <div class="flex gap-3">
+                        <button type="submit" class="btn btn-primary"><i
+                                class="fa-solid fa-paper-plane"></i><span>Submit Registration</span></button>
+                        <button type="button" id="resetBtn"
+                            class="btn btn-secondary px-4 py-2 rounded-lg glass">Reset</button>
+                    </div>
+
+                    <p id="formMsg" class="text-sm muted mt-2"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div data-aos="fade-right">
+                    <h3 class="text-lg font-semibold">Get in touch</h3>
+                    <p class="muted mt-2">Questions about the event? Reach out to our team.</p>
+
+                    <div class="mt-4 space-y-3">
+                        <div class="glass p-4 rounded-lg">
+                            <div class="font-semibold">Email</div>
+                            <div class="muted text-sm">hello@tcpioneer.org</div>
+                        </div>
+                        <div class="glass p-4 rounded-lg">
+                            <div class="font-semibold">Location</div>
+                            <div class="muted text-sm">Birgunj, Nepal</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <h3 class="text-lg font-semibold">Newsletter</h3>
+                    <p class="muted mt-2">Subscribe for updates & announcements.</p>
+                    <form id="newsletter" class="mt-4 flex gap-2">
+                        <input id="newsEmail" type="email" placeholder="your@email.com"
+                            class="p-3 rounded-lg bg-black/40 border border-white/6 flex-1" />
+                        <button type="submit" class="btn btn-icon btn-primary" aria-label="Subscribe to newsletter"><i
+                                class="fa-solid fa-envelope"></i></button>
+                    </form>
+                    <div id="newsletterMsg" class="muted text-sm mt-2"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/30 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-6 items-center">
+                <div>
+                    <div class="flex items-center gap-3">
+                        <img src="../images/nav-logo.png" alt="logo" class="h-10 w-auto rounded-md bg-black/10 p-1"
+                            loading="lazy" />
+                        <div>
+                            <div class="font-semibold">The Cyber Pioneer</div>
+                            <div class="muted text-xs">Building community & skills</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center muted">
+                    <div>© <span id="year"></span> The Cyber Pioneer • Pioneer Hackfeast 2025</div>
+                    <div class="mt-2 text-xs">Made with ❤️ — follow us on social</div>
+                </div>
+
+                <div class="flex items-center justify-end gap-3">
+                    <a href="#" class="p-2 rounded-md glass"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="p-2 rounded-md glass"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="p-2 rounded-md glass"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60">
+        <div class="glass p-6 rounded-2xl w-[90%] max-w-md text-center">
+            <h3 class="text-xl font-semibold">Thanks for registering!</h3>
+            <p class="muted mt-2">We'll contact you with details and confirmation.</p>
+            <div class="mt-4">
+                <button id="closeModal" class="btn btn-primary px-4 py-2">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // small helpers
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // mobile menu toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // quick demo forms (client-side only)
+        const regForm = document.getElementById('registrationForm');
+        const newsletter = document.getElementById('newsletter');
+        const successModal = document.getElementById('successModal');
+        const closeModal = document.getElementById('closeModal');
+        const formMsg = document.getElementById('formMsg');
+
+        function showSuccess() {
+            successModal.classList.remove('hidden');
+            successModal.style.display = 'flex';
+        }
+
+
+        regForm?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value?.trim();
+            const email = document.getElementById('email').value?.trim();
+            if (!name || !email) {
+                formMsg.textContent = 'Please provide name and email.';
+                return;
+            }
+            formMsg.textContent = 'Registration submitted (demo only).';
+            showSuccess();
+        });
+
+        newsletter?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const em = document.getElementById('newsEmail').value.trim();
+            if (!em) { document.getElementById('newsletterMsg').textContent = 'Enter a valid email.'; return; }
+            document.getElementById('newsletterMsg').textContent = 'Subscribed (demo).';
+        });
+
+        closeModal?.addEventListener('click', () => {
+            successModal.style.display = 'none';
+            successModal.classList.add('hidden');
+        });
+
+        // AOS init
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({ duration: 700, once: true });
+        });
+
+        /* ======= Starfield & Nebula Canvas =======
+           Responsive, DPR-aware starfield + soft nebula blobs.
+        */
+        (function canvasGalaxy() {
+            const canvas = document.getElementById('bgCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let w, h, DPR = Math.max(1, window.devicePixelRatio || 1);
+            let stars = [], nebulaBlobs = [];
+
+            function resize() {
+                DPR = Math.max(1, window.devicePixelRatio || 1);
+                canvas.width = Math.floor(window.innerWidth * DPR);
+                canvas.height = Math.floor(window.innerHeight * DPR);
+                canvas.style.width = window.innerWidth + 'px';
+                canvas.style.height = window.innerHeight + 'px';
+                ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+                w = window.innerWidth; h = window.innerHeight;
+                createStars(Math.floor((w * h) / 3000));
+                createNebula(Math.max(3, Math.floor(w / 400)));
+            }
+            window.addEventListener('resize', resize);
+            resize();
+
+            function rand(min, max) { return Math.random() * (max - min) + min; }
+
+            function createStars(count) {
+                stars = [];
+                for (let i = 0; i < count; i++) {
+                    // give each star a hue around a cool range but with variance
+                    const hue = rand(180, 320);
+                    const speed = rand(0.02, 0.5);
+                    const angle = Math.random() * Math.PI * 2;
+                    stars.push({
+                        x: rand(0, w),
+                        y: rand(0, h),
+                        r: rand(0.3, 1.8),
+                        alpha: rand(0.3, 1),
+                        twinkle: rand(0.002, 0.02),
+                        hue: hue,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed
+                    });
+                }
+            }
+
+            function createNebula(count) {
+                nebulaBlobs = [];
+                for (let i = 0; i < count; i++) {
+                    nebulaBlobs.push({
+                        x: rand(0, w),
+                        y: rand(0, h),
+                        r: rand(Math.min(w, h) / 6, Math.min(w, h) / 2.5),
+                        hue: rand(180, 260),
+                        alpha: rand(0.03, 0.12),
+                        vx: rand(-0.02, 0.02),
+                        vy: rand(-0.01, 0.01)
+                    });
+                }
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, w, h);
+
+                // subtle dark gradient
+                const g = ctx.createLinearGradient(0, 0, 0, h);
+                g.addColorStop(0, 'rgba(6,8,20,1)');
+                g.addColorStop(1, 'rgba(2,4,10,1)');
+                ctx.fillStyle = g;
+                ctx.fillRect(0, 0, w, h);
+
+                // Draw nebula blobs with soft halos (additive)
+                ctx.globalCompositeOperation = 'lighter';
+                nebulaBlobs.forEach(nb => {
+                    nb.x += nb.vx;
+                    nb.y += nb.vy;
+                    if (nb.x < -nb.r) nb.x = w + nb.r;
+                    if (nb.x > w + nb.r) nb.x = -nb.r;
+                    if (nb.y < -nb.r) nb.y = h + nb.r;
+                    if (nb.y > h + nb.r) nb.y = -nb.r;
+
+                    // outer soft halo
+                    const halo = ctx.createRadialGradient(nb.x, nb.y, nb.r * 0.05, nb.x, nb.y, nb.r);
+                    halo.addColorStop(0, `hsla(${nb.hue},85%,65%,${nb.alpha * 1.0})`);
+                    halo.addColorStop(0.5, `hsla(${(nb.hue + 40) % 360},72%,48%,${nb.alpha * 0.6})`);
+                    halo.addColorStop(1, 'rgba(0,0,0,0)');
+                    ctx.beginPath();
+                    ctx.fillStyle = halo;
+                    ctx.fillRect(nb.x - nb.r, nb.y - nb.r, nb.r * 2, nb.r * 2);
+                });
+
+                // Draw stars with movement and colorful glow (additive blending)
+                ctx.globalCompositeOperation = 'lighter';
+                stars.forEach(s => {
+                    // movement
+                    s.x += s.vx;
+                    s.y += s.vy;
+                    // wrap around edges
+                    if (s.x < -10) s.x = w + 10;
+                    if (s.x > w + 10) s.x = -10;
+                    if (s.y < -10) s.y = h + 10;
+                    if (s.y > h + 10) s.y = -10;
+
+                    // twinkling
+                    s.alpha += (Math.sin(Date.now() * s.twinkle + s.x * 0.001) * 0.003);
+                    const alpha = Math.max(0.04, Math.min(1, s.alpha));
+
+                    // bright core (slightly tinted)
+                    ctx.beginPath();
+                    ctx.fillStyle = `hsla(${s.hue},90%,95%,${alpha})`;
+                    ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // multi-layered glow
+                    const glowColors = [`hsla(${s.hue},90%,70%,${alpha * 0.12})`, `hsla(${(s.hue + 40) % 360},80%,55%,${alpha * 0.06})`];
+                    ctx.beginPath(); ctx.fillStyle = glowColors[0]; ctx.arc(s.x, s.y, s.r * 4, 0, Math.PI * 2); ctx.fill();
+                    ctx.beginPath(); ctx.fillStyle = glowColors[1]; ctx.arc(s.x, s.y, s.r * 8, 0, Math.PI * 2); ctx.fill();
+                });
+
+                // slight faint milky band using lighter composite
+                const midGr = ctx.createLinearGradient(0, h * 0.4, 0, h * 0.6);
+                midGr.addColorStop(0, 'rgba(255,255,255,0.02)');
+                midGr.addColorStop(1, 'rgba(255,255,255,0.00)');
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.fillStyle = midGr;
+                ctx.fillRect(0, h * 0.45, w, h * 0.12);
+
+                requestAnimationFrame(draw);
+            }
+
+            draw();
+        })();
+
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        (function headerScroll() {
+            const hdr = document.querySelector('.site-header');
+            if (!hdr) return;
+            const onScroll = () => {
+                if (window.scrollY > 12) hdr.classList.add('scrolled'); else hdr.classList.remove('scrolled');
+            };
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+        })();
+    </script>
+    <script>
+        // Reset button: clears the registration form and any inline messages
+        (function wireReset() {
+            const resetBtn = document.getElementById('resetBtn');
+            if (!resetBtn) return;
+            resetBtn.addEventListener('click', () => {
+                const form = document.getElementById('registrationForm');
+                if (form) {
+                    form.reset();
+                }
+
+                // Clear inline messages
+                const formMsg = document.getElementById('formMsg');
+                if (formMsg) formMsg.textContent = '';
+                const newsletterMsg = document.getElementById('newsletterMsg');
+                if (newsletterMsg) newsletterMsg.textContent = '';
+
+                // Hide success modal if visible
+                const successModal = document.getElementById('successModal');
+                if (successModal) {
+                    successModal.style.display = 'none';
+                    successModal.classList.add('hidden');
+                }
+
+                // Focus first input for convenience
+                const first = document.getElementById('name') || document.querySelector('#registrationForm input, #registrationForm select, #registrationForm textarea');
+                if (first) first.focus();
+            });
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic Setup -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="The Cyber Pioneer Team">
+    <meta name="language" content="en">
+
+    <!-- Title & SEO -->
+    <title>The Cyber Pioneer - Empowering Future Cybersecurity Leaders</title>
+    <meta name="description"
+        content="The Cyber Pioneer is a community dedicated to educating, inspiring, and uniting passionate students to develop ethical cybersecurity skills.">
+    <link rel="canonical" href="https://www.tcpioneer.org/">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0f172a">
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="The Cyber Pioneer - Empowering Future Cybersecurity Leaders">
+    <meta property="og:description"
+        content="The Cyber Pioneer is a community dedicated to educating, inspiring, and uniting passionate students to develop ethical cybersecurity skills.">
+    <meta property="og:url" content="https://www.tcpioneer.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Cyber Pioneer">
+    <meta property="og:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Cyber Pioneer - Empowering Future Cybersecurity Leaders">
+    <meta name="twitter:description"
+        content="The Cyber Pioneer is a community dedicated to educating, inspiring, and uniting passionate students to develop ethical cybersecurity skills.">
+    <meta name="twitter:image" content="https://www.tcpioneer.org/images/nav-logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "The Cyber Pioneer",
+  "url": "https://www.tcpioneer.org/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.tcpioneer.org/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "description": "The Cyber Pioneer is a community dedicated to educating, inspiring, and uniting passionate students to develop ethical cybersecurity skills.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Cyber Pioneer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.tcpioneer.org/images/nav-logo.png"
+    }
+  }
+}
+    </script>
+
+
+    <!-- Styles & Scripts -->
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- SwiperJS CSS for carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+
+<body class="bg-gradient-to-b from-gray-50 to-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo + Org Name -->
+                <div class="flex-shrink-0">
+                    <a href="/" class="flex items-center gap-2 group">
+                        <img class="h-14 w-14 transition-transform duration-300 ease-in-out hover:scale-110 bg-white"
+                            src="images/nav-logo.png" alt="Cyber Pioneer Logo" loading="lazy">
+                        <span class="hidden sm:inline text-xl font-bold text-blue-700 tracking-tight ml-2">The Cyber
+                            Pioneer</span>
+                    </a>
+                </div>
+                <!-- Desktop Nav (show on lg and up) -->
+                <ul class="hidden lg:flex items-center space-x-1 lg:space-x-2 xl:space-x-3 text-base lg:text-lg">
+                    <!-- Home -->
+                    <li>
+                        <a href="/"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-blue-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition  hover:shadow-md">
+                            <i class="fas fa-home"></i> <span>Home</span>
+                        </a>
+                    </li>
+                    <!-- About Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-info-circle"></i> <span>About</span> <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-2 w-52 bg-white border border-blue-100 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <li><a href="/about/organization"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Organization</a>
+                            </li>
+                            <li><a href="/about/team"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Team</a>
+                            </li>
+                            <li><a href="/about/services"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Services</a>
+                            </li>
+                            <li><a href="/about/events"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Events</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Resources Dropdown -->
+                    <li class="relative group">
+                        <button
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 font-normal hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-book"></i> <span>Resources</span> <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul
+                            class="absolute left-0 mt-2 w-52 bg-white border border-blue-100 rounded-2xl shadow-2xl opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-50 overflow-hidden">
+                            <li><a href="/resources/blogs"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Blogs</a>
+                            </li>
+                            <li><a href="/resources/tools"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Tools</a>
+                            </li>
+                            <li><a href="/resources/guides"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Guides</a>
+                            </li>
+                            <li><a href="/resources/roadmaps"
+                                    class="block px-5 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-900">Roadmaps</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Other Links -->
+                    <li>
+                        <a href="/faq"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-question-circle"></i> <span>FAQ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-phone-alt"></i> <span>Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/joinus"
+                            class="flex items-center gap-1 px-4 py-2 rounded-xl text-gray-700 hover:bg-blue-100 hover:text-blue-900 transition">
+                            <i class="fas fa-user-plus"></i> <span>Join Us</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Mobile Menu Toggle (show on sm and md, hide on lg and up) -->
+                <button id="mobile-menu-toggle"
+                    class="lg:hidden text-blue-700 text-3xl hover:bg-blue-100 focus:outline-none transition">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed inset-0 w-full h-full bg-gradient-to-b from-white via-blue-50 to-white z-50 hidden overflow-y-auto transition-transform duration-300 transform -translate-x-full"
+            style="will-change: transform;">
+            <div class="w-full h-full flex flex-col pt-8 pb-8 px-4 sm:px-8 md:px-14 relative shadow-2xl animate-none"
+                id="mobile-menu-inner">
+                <div class="flex items-center justify-between mb-6 px-1">
+                    <a href="/" class="flex items-center gap-2">
+                        <img class="h-12 w-12" src="images/nav-logo.png" alt="Cyber Pioneer Logo">
+                        <span
+                            class="text-xl font-extrabold text-blue-700 tracking-tight font-mono drop-shadow whitespace-nowrap">The
+                            Cyber Pioneer</span>
+                    </a>
+                    <button id="mobile-menu-close"
+                        class="ml-2 flex items-center justify-center w-11 h-11 text-2xl text-blue-700 hover:text-blue-900 bg-blue-50 rounded-full shadow-lg z-50 border border-blue-200 transition-all duration-200 focus:outline-none">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="flex flex-col gap-1 w-full max-w-md mx-auto mt-2">
+
+                    <!-- Home -->
+                    <li><a href="/"
+                            class="flex items-center gap-2 px-4 py-2 rounded-xl text-blue-600 font-semibold hover:bg-blue-100 transition"><i
+                                class="fas fa-home"></i> Home</a></li>
+
+                    <!-- About -->
+                    <li>
+                        <button
+                            class="flex items-center gap-2 w-full px-4 py-2 rounded-xl text-gray-700 font-semibold hover:bg-blue-100 transition"
+                            onclick="document.getElementById('mobile-about').classList.toggle('hidden')">
+                            <i class="fas fa-info-circle"></i> About <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul id="mobile-about" class="hidden flex-col ml-6 mt-1">
+                            <li><a href="/about/organization"
+                                    class="block px-4 py-2 rounded hover:bg-blue-50">Organization</a></li>
+                            <li><a href="/about/team" class="block px-4 py-2 rounded hover:bg-blue-50">Team</a></li>
+                            <li><a href="/about/services" class="block px-4 py-2 rounded hover:bg-blue-50">Services</a>
+                            </li>
+                            <li><a href="/about/events" class="block px-4 py-2 rounded hover:bg-blue-50">Events</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Resources -->
+                    <li>
+                        <button
+                            class="flex items-center gap-2 w-full px-4 py-2 rounded-xl text-gray-700 font-semibold hover:bg-blue-100 transition"
+                            onclick="document.getElementById('mobile-resources').classList.toggle('hidden')">
+                            <i class="fas fa-book"></i> Resources <i class="fas fa-caret-down ml-1"></i>
+                        </button>
+                        <ul id="mobile-resources" class="hidden flex-col ml-6 mt-1">
+                            <li><a href="/resources/blogs" class="block px-4 py-2 rounded hover:bg-blue-50">Blogs</a>
+                            </li>
+                            <li><a href="/resources/tools" class="block px-4 py-2 rounded hover:bg-blue-50">Tools</a>
+                            </li>
+
+                            <li><a href="/resources/guides" class="block px-4 py-2 rounded hover:bg-blue-50">Guides</a>
+                            </li>
+                            <li><a href="/resources/roadmaps"
+                                    class="block px-4 py-2 rounded hover:bg-blue-50">Roadmaps</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Others -->
+                    <li><a href="/faq"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-question-circle"></i> FAQ</a></li>
+                    <li><a href="/contact"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-phone-alt"></i> Contact</a></li>
+                    <li><a href="/joinus"
+                            class="flex items-center text-gray-700 gap-2 px-4 py-2 rounded-xl hover:bg-blue-100 transition"><i
+                                class="fas fa-user-plus"></i> Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.getElementById('mobile-menu-toggle');
+                const menu = document.getElementById('mobile-menu');
+                const menuInner = document.getElementById('mobile-menu-inner');
+                const menuClose = document.getElementById('mobile-menu-close');
+                function openMenu() {
+                    menu.classList.remove('hidden');
+                    setTimeout(() => {
+                        menu.classList.remove('-translate-x-full');
+                        menu.classList.add('translate-x-0');
+                    }, 10);
+                    document.body.classList.add('overflow-hidden');
+                }
+                function closeMenu() {
+                    menu.classList.remove('translate-x-0');
+                    menu.classList.add('-translate-x-full');
+                    setTimeout(() => {
+                        menu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }, 300);
+                }
+                if (menuToggle && menu) {
+                    menuToggle.addEventListener('click', openMenu);
+                }
+                if (menuClose && menu) {
+                    menuClose.addEventListener('click', closeMenu);
+                }
+                menu && menu.addEventListener('click', function (e) {
+                    if (e.target === menu) {
+                        closeMenu();
+                    }
+                });
+            });
+        </script>
+    </nav>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="main-text">
+                    <h1 id="line1"></h1>
+                    <h1 id="line2"></h1>
+                </div>
+                <p class="sec-text">Empowering students with ethical cybersecurity skills to tackle digital challenges
+                    and
+                    innovate for a safer tomorrow.</p>
+                <div class="flex flex-wrap justify-center gap-3 mt-3">
+                    <a href="/joinus/"
+                        class="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-900 text-white font-bold rounded-3xl px-7 py-3 shadow-md border border-blue-300 transition-all duration-300 hover:from-blue-900 hover:to-blue-500 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 mb-2 text-base md:text-lg">
+                        <i class="fas fa-user-plus"></i> Join Us
+                    </a>
+                    <a href="/about/organization/"
+                        class="flex items-center gap-2 bg-gradient-to-r from-indigo-400 to-blue-700 text-white font-bold rounded-3xl px-7 py-3 shadow-md border border-indigo-200 transition-all duration-300 hover:from-blue-700 hover:to-indigo-400 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 mb-2 text-base md:text-lg">
+                        <i class="fas fa-info-circle"></i> Learn More
+                    </a>
+                    <a href="/about/events/"
+                        class="flex items-center gap-2 bg-gradient-to-r from-cyan-400 to-blue-600 text-white font-bold rounded-3xl px-7 py-3 shadow-md border border-cyan-200 transition-all duration-300 hover:from-blue-600 hover:to-cyan-400 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 mb-2 text-base md:text-lg">
+                        <i class="fas fa-calendar-alt"></i> Events
+                    </a>
+                </div>
+            </div>
+
+            <!-- Floating Icons -->
+            <div class="floating-icons">
+                <i class="fas fa-laptop-code"></i>
+                <i class="fas fa-graduation-cap"></i>
+                <i class="fas fa-robot"></i>
+                <i class="fas fa-book"></i>
+                <i class="fas fa-microchip"></i>
+            </div>
+        </section>
+
+
+      
+
+
+        <!-- our cyber tools -->
+        <section class="objectives bg-white py-16">
+            <div class="max-w-6xl mx-auto px-4" data-aos="fade-up">
+                <h1 class="text-3xl font-bold text-center text-gray-900 mb-12 flex items-center justify-center gap-2 animate__animated animate__fadeInDown"
+                    style="--animate-duration:1.2s;">
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-400 to-cyan-500 mr-2 animate-bounce">
+                        <i class="fas fa-toolbox text-white text-2xl"></i>
+                    </span>
+                    Our Cyber Tools
+                </h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-items-center">
+                    <!-- Tool 1 -->
+                    <div class="relative bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50 p-6 rounded-xl shadow-md border-l-4 border-green-300 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.1s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.2s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-green-400 text-white text-lg shadow"><i
+                                    class="fas fa-shield-virus"></i></span>
+                        </span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 flex items-center"><span
+                                class="ml-10">StaySafe Online</span></h3>
+                        <p class="text-gray-700 mb-3">Learn how to browse safely and recognize online threats
+                            effectively.</p>
+                        <a href="https://anandksri.github.io/staysafe-online/" target="_blank"
+                            class="text-blue-600 font-medium hover:underline">Try it now →</a>
+                    </div>
+                    <!-- Tool 2 -->
+                    <div class="relative bg-gradient-to-br from-purple-50 via-fuchsia-50 to-pink-50 p-6 rounded-xl shadow-md border-l-4 border-purple-300 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.2s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.3s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-400 text-white text-lg shadow"><i
+                                    class="fas fa-key"></i></span>
+                        </span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 flex items-center"><span
+                                class="ml-10">Password Guardian</span></h3>
+                        <p class="text-gray-700 mb-3">Check your password strength and get tips for improving security.
+                        </p>
+                        <a href="https://anandksri.github.io/password-guardian/" target="_blank"
+                            class="text-blue-600 font-medium hover:underline">Check now →</a>
+                    </div>
+                    <!-- Tool 3 -->
+                    <div class="relative bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50 p-6 rounded-xl shadow-md border-l-4 border-yellow-300 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.3s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.4s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-yellow-400 text-white text-lg shadow"><i
+                                    class="fas fa-robot"></i></span>
+                        </span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 flex items-center"><span
+                                class="ml-10">ChatGPT Cheat Sheet</span></h3>
+                        <p class="text-gray-700 mb-3">Quickly learn how to use ChatGPT for productivity, coding, and
+                            more.</p>
+                        <a href="https://anandksri.github.io/chatgpt-cheatsheet/" target="_blank"
+                            class="text-blue-600 font-medium hover:underline">Explore it →</a>
+                    </div>
+                    <!-- Tool 4 -->
+                    <div class="relative bg-gradient-to-br from-pink-50 via-red-50 to-yellow-50 p-6 rounded-xl shadow-md border-l-4 border-pink-300 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.4s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.5s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-pink-400 text-white text-lg shadow"><i
+                                    class="fas fa-route"></i></span>
+                        </span>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 flex items-center"><span
+                                class="ml-10">Cybersecurity Roadmap</span></h3>
+                        <p class="text-gray-700 mb-3">Step-by-step guide to learn and grow in the cybersecurity field.
+                        </p>
+                        <a href="https://github.com/anandksri/cybersecurity-roadmap" target="_blank"
+                            class="text-blue-600 font-medium hover:underline">View on GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Enhanced Our Mission Section -->
+        <div class="max-w-7xl mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Left Side: Our Mission -->
+                <div class="order-2 md:order-1 text-center md:text-left animate__animated animate__fadeInLeft"
+                    style="--animate-duration:1.2s;">
+                    <div
+                        class="relative bg-gradient-to-br from-blue-50 via-cyan-50 to-green-50 p-8 rounded-xl shadow-lg border-l-4 border-blue-300 transition-transform duration-300 hover:scale-105 group">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInDown"
+                            style="--animate-duration:1.3s;">
+                            <span
+                                class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-400 text-white text-2xl shadow-lg"><i
+                                    class="fas fa-bullseye"></i></span>
+                        </span>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4 flex items-center mt-4 md:mt-0"><span
+                                class="ml-12">Our Mission</span></h2>
+                        <p class="text-gray-600 leading-relaxed tracking-wide text-justify">
+                            We are proud to be the <span class="font-bold text-blue-700">first</span> to introduce
+                            seminars with <span class="font-bold text-green-600">live hacking demonstrations</span> in
+                            Nepal, setting a new standard for cybersecurity education. Our mission is to empower
+                            students with <span class="font-bold text-cyan-700">real-life examples</span> and practical
+                            experiences, making cybersecurity both accessible and exciting.
+                            <br><br>
+                            As pioneers, we provide hands-on sessions where students witness real cyber attacks and
+                            learn how to defend against them. We equip our community with essential tools, resources,
+                            and guidance to stay safe online—covering everything from password security to social
+                            engineering awareness.
+                            <br><br>
+                            <span class="font-bold text-pink-600">The Cyber Pioneer</span> is also the <span
+                                class="font-bold text-blue-700">first</span> to launch a dedicated cyber awareness
+                            movement in Birgunj, inspiring a new generation to protect themselves and others in the
+                            digital world. Our vision is to build a safer, smarter, and more resilient society—one
+                            student at a time.
+                        </p>
+                    </div>
+                </div>
+                <!-- Right Side: Image with Animation -->
+                <div class="order-1 md:order-2 flex justify-center animate__animated animate__fadeInRight"
+                    style="--animate-duration:1.2s;">
+                    <div class="relative">
+                        <img src="images/mission.jpeg" alt="Our Mission"
+                            class="w-64 h-64 object-cover rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 border-4 border-blue-100">
+                        <span class="absolute -top-4 -right-4 animate__animated animate__fadeInUp"
+                            style="--animate-duration:1.4s;">
+                            <span
+                                class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-400 text-white text-xl shadow-lg"><i
+                                    class="fas fa-hands-helping"></i></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Enhanced About Us Section -->
+        <div class="bg-gradient-to-b from-gray-50 to-white px-4 py-16">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <!-- Left Side: Image with Animation -->
+                    <div class="flex justify-center animate__animated animate__fadeInLeft"
+                        style="--animate-duration:1.2s;">
+                        <div class="relative">
+                            <img src="images/about.jpeg" alt="About Us"
+                                class="w-64 h-64 object-cover rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-500 border-4 border-green-100">
+                            <span class="absolute -top-4 -right-4 animate__animated animate__fadeInUp"
+                                style="--animate-duration:1.4s;">
+                                <span
+                                    class="flex items-center justify-center w-10 h-10 rounded-full bg-green-400 text-white text-xl shadow-lg"><i
+                                        class="fas fa-users"></i></span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Right Side: About Us Content with Icons -->
+                    <div class="animate__animated animate__fadeInRight" style="--animate-duration:1.2s;">
+                        <div
+                            class="relative bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50 p-8 rounded-xl shadow-lg border-l-4 border-green-300 transition-transform duration-300 hover:scale-105 group">
+                            <span class="absolute -top-5 left-5 animate__animated animate__fadeInDown"
+                                style="--animate-duration:1.3s;">
+                                <span
+                                    class="flex items-center justify-center w-10 h-10 rounded-full bg-green-400 text-white text-2xl shadow-lg"><i
+                                        class="fas fa-users"></i></span>
+                            </span>
+                            <h2
+                                class="text-3xl font-bold text-gray-900 mb-4 text-center md:text-left flex items-center mt-4 md:mt-0">
+                                <span class="ml-12">About Us</span>
+                            </h2>
+                            <p class="text-gray-600 leading-relaxed tracking-wide text-justify">
+                                <span class="font-semibold text-blue-600">The Cyber Pioneer</span> is proud to be the
+                                <span class="font-bold text-blue-700">first</span> to introduce <span
+                                    class="font-bold text-green-600">live hacking demonstration seminars</span> in Nepal
+                                and the <span class="font-bold text-blue-700">first</span> to launch a dedicated cyber
+                                awareness movement in Birgunj.
+                                <br><br>
+                                We are a passionate team of students, educators, and tech enthusiasts who believe in
+                                learning by doing. Our seminars feature real-life cyber attack examples, hands-on
+                                activities, and practical resources to help everyone stay safe online.
+                                <br><br>
+                                Our community is open to all: <span class="font-medium">Core Members</span> (who drive
+                                our mission) and <span class="font-medium">Normal Members</span> (students eager to
+                                learn and grow). From pioneering awareness campaigns to running technical sessions and
+                                online challenges, we’re building a digitally secure generation—one student at a time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- collaboration -->
+        <section id="collaboration" class="py-20 bg-gradient-to-b from-blue-50 to-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl font-extrabold mb-4 text-blue-700 flex items-center justify-center gap-3">
+                        <span class="inline-block animate-bounce text-5xl">🤝</span>
+                        <span class="drop-shadow-lg flex items-center gap-2">
+                            Collaborate With Us
+                            <i class="fas fa-arrow-right text-green-500 animate-pulse"></i>
+                        </span>
+                    </h2>
+                    <p class="max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed mb-4">
+                        <span class="font-semibold text-blue-600">The Cyber Pioneer</span> thrives on the power of
+                        partnership. We join forces with visionary schools, colleges, and tech communities to create a
+                        safer, smarter digital future for all.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 mb-2">
+                        <span
+                            class="inline-flex items-center bg-blue-100 text-blue-700 px-4 py-2 rounded-full font-medium shadow-sm">
+                            <i class="fas fa-handshake mr-2"></i> Co-host Workshops
+                        </span>
+                        <span
+                            class="inline-flex items-center bg-green-100 text-green-700 px-4 py-2 rounded-full font-medium shadow-sm">
+                            <i class="fas fa-users mr-2"></i> Empower Students
+                        </span>
+                        <span
+                            class="inline-flex items-center bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full font-medium shadow-sm">
+                            <i class="fas fa-network-wired mr-2"></i> Expand Networks
+                        </span>
+                    </div>
+                    <p class="italic text-blue-500 text-base mt-2">
+                        Let’s grow, innovate, and secure the digital world — together.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center items-center mb-8"
+                    data-aos="zoom-in-up">
+                    <!-- Partner 1 -->
+                    
+                    <!-- Partner 2 -->
+                    <a href="https://www.facebook.com/profile.php?id=100054215751447" target="_blank"
+                        rel="noopener noreferrer"
+                        class="bg-white rounded-xl shadow-xl p-5 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300 group border border-blue-100">
+                        <img src="images/partners/vidyasadansecschool.jpg" alt="XYZ College"
+                            class="h-24 object-contain mb-3 transition-all duration-300 group-hover:scale-110"
+                            loading="lazy">
+                        <span class="text-base font-bold text-blue-700 group-hover:text-blue-900">Vidya Sadan Sec.
+                            School</span>
+                        <span class="text-xs text-gray-500 mt-1">Program Partner</span>
+                    </a>
+                    <!-- Partner 3 -->
+                    <a href="https://zerodayarena.com" target="_blank" rel="noopener noreferrer"
+                        class="bg-white rounded-xl shadow-xl p-5 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300 group border border-blue-100">
+                        <img src="images/partners/zerodayarena.png" alt="ABC Tech Community"
+                            class="h-24 object-contain mb-3 transition-all duration-300 group-hover:scale-110"
+                            loading="lazy">
+                        <span class="text-base font-bold text-blue-700 group-hover:text-blue-900">Zero Day Arena</span>
+                        <span class="text-xs text-gray-500 mt-1">CTF organizing Partner</span>
+                    </a>
+                    <!-- Partner 4 -->
+                    <a href="https://y3tisec.github.io/" target="_blank" rel="noopener noreferrer"
+                        class="bg-white rounded-xl shadow-xl p-5 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300 group border border-blue-100">
+                        <img src="images/partners/y3ti@sec.png" alt="DEF University"
+                            class="h-24 object-contain mb-3 transition-all duration-300 group-hover:scale-110"
+                            loading="lazy">
+                        <span class="text-base font-bold text-blue-700 group-hover:text-blue-900">&nbsp&nbsp&nbsp
+                            Y3ti@Sec
+                            &nbsp&nbsp&nbsp&nbsp&nbsp </span>
+                        <span class="text-xs text-gray-500 mt-1">CTF Partner</span>
+                    </a>
+                    
+                    <a href="https://www.globalbusinesscollege.com.np/" target="_blank" rel="noopener noreferrer"
+                        class="bg-white rounded-xl shadow-xl p-5 flex flex-col items-center hover:scale-105 hover:shadow-2xl transition-all duration-300 group border border-blue-100">
+                        <img src="images/partners/global-college.png" alt="DEF University"
+                            class="h-24 object-contain mb-3 transition-all duration-300 group-hover:scale-110"
+                            loading="lazy">
+                        <span class="text-base font-bold text-blue-700 group-hover:text-blue-900">Global Business
+                            College </span>
+                        <span class="text-xs text-gray-500 mt-1">Program Partner</span>
+                    </a>
+                    <!-- Placeholder for new partners -->
+                    <div
+                        class="bg-gradient-to-b from-blue-50 to-white rounded-xl shadow-lg p-5 flex flex-col items-center opacity-70 border border-dashed border-blue-300">
+                        <span class="h-24 flex items-center justify-center text-3xl text-blue-400 mb-3 animate-pulse">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text-base font-semibold text-blue-500">Your Logo Here</span>
+                        <span class="text-xs text-gray-400 mt-1">Become a Partner</span>
+                    </div>
+                </div>
+                <div class="text-center mt-8" data-aos="fade-up">
+                    <a href="/contact"
+                        class="inline-block bg-gradient-to-r from-blue-600 to-green-500 text-white px-8 py-3 rounded-full shadow-lg font-semibold text-lg hover:from-blue-700 hover:to-green-600 transition-all duration-300 transform hover:-translate-y-1">
+                        Become a Partner
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <p class="mt-4 text-gray-700 text-base max-w-2xl mx-auto leading-relaxed">
+                        <span class="font-semibold text-blue-700 text-lg">The Cyber Pioneer</span> is proud to join
+                        hands
+                        with forward-thinking schools, colleges, and tech communities to advance cybersecurity awareness
+                        and
+                        digital safety for all.<br>
+                        <span class="inline-flex items-center gap-1 text-green-600 font-medium text-base"><i
+                                class="fas fa-lightbulb"></i> Why collaborate?</span>
+                    <ul class="list-disc list-inside ml-4 text-gray-700 mt-2 mb-2 text-sm md:text-base">
+                        <li>Co-host impactful workshops and awareness campaigns</li>
+                        <li>Empower students and educators with hands-on learning</li>
+                        <li>Access exclusive resources, events, and networking</li>
+                    </ul>
+                    <span class="block mt-2 text-sm md:text-base">Ready to make a difference? <a href="/contact"
+                            class="text-blue-600 hover:underline font-semibold">Contact us</a> to explore partnership
+                        opportunities, joint events, and custom programs tailored for your institution or
+                        community.</span>
+                    </p>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- objectives -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <section class="objectives">
+            <div class="container">
+                <div class="core-values-section mb-10" data-aos="fade-up">
+                    <h1 class="font-bold text-center text-3xl text-gray-900 mb-10 flex items-center justify-center gap-2 animate__animated animate__fadeInDown"
+                        style="--animate-duration:1.2s;">
+                        <span
+                            class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-400 to-cyan-500 mr-2 animate-bounce">
+                            <i class="fas fa-bolt text-white text-2xl"></i>
+                        </span>
+                        Empowering Through Technology
+                    </h1>
+                    <div class="relative bg-gradient-to-br from-blue-50 via-cyan-50 to-green-50 p-6 rounded-lg shadow-lg border-l-4 border-blue-300 mb-6 transition-transform duration-300 ease-in-out hover:scale-105 animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.1s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.2s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-400 text-white text-lg shadow"><i
+                                    class="fas fa-shield-halved"></i></span>
+                        </span>
+                        <h3 class="text-lg font-semibold mb-1 flex items-center"><span class="ml-10 text-blue-600">Cyber
+                                Awareness Training</span></h3>
+                        <p class="text-gray-700 leading-relaxed">Educating individuals and organizations on safe online
+                            practices and recognizing threats.</p>
+                    </div>
+                    <div class="relative bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50 p-6 rounded-lg shadow-lg border-l-4 border-green-300 mb-6 transition-transform duration-300 ease-in-out hover:scale-105 animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.2s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.3s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-green-400 text-white text-lg shadow"><i
+                                    class="fas fa-chalkboard-teacher"></i></span>
+                        </span>
+                        <h3 class="text-lg font-semibold mb-1 flex items-center"><span
+                                class="ml-10 text-green-600">Workshops & Bootcamps</span></h3>
+                        <p class="text-gray-700 leading-relaxed">Hands-on sessions to build practical skills in ethical
+                            hacking, digital forensics, and more.</p>
+                    </div>
+                    <div class="relative bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50 p-6 rounded-lg shadow-lg border-l-4 border-yellow-300 mb-6 transition-transform duration-300 ease-in-out hover:scale-105 animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.3s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.4s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-yellow-400 text-white text-lg shadow"><i
+                                    class="fas fa-network-wired"></i></span>
+                        </span>
+                        <h3 class="text-lg font-semibold mb-1 flex items-center"><span
+                                class="ml-10 text-yellow-500">Network Security Programs</span></h3>
+                        <p class="text-gray-700 leading-relaxed">Protecting digital infrastructures by teaching
+                            defensive strategies and secure configurations.</p>
+                    </div>
+                    <div class="relative bg-gradient-to-br from-purple-50 via-fuchsia-50 to-pink-50 p-6 rounded-lg shadow-lg border-l-4 border-purple-300 mb-6 transition-transform duration-300 ease-in-out hover:scale-105 animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.4s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.5s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-400 text-white text-lg shadow"><i
+                                    class="fas fa-laptop-code"></i></span>
+                        </span>
+                        <h3 class="text-lg font-semibold mb-1 flex items-center"><span
+                                class="ml-10 text-purple-600">Capture The Flag (CTF) Events</span></h3>
+                        <p class="text-gray-700 leading-relaxed">Gamified challenges that sharpen problem-solving,
+                            hacking, and reverse engineering skills.</p>
+                    </div>
+                    <div class="relative bg-gradient-to-br from-pink-50 via-red-50 to-yellow-50 p-6 rounded-lg shadow-lg border-l-4 border-pink-300 mb-6 transition-transform duration-300 ease-in-out hover:scale-105 animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.5s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.6s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-pink-400 text-white text-lg shadow"><i
+                                    class="fas fa-users-cog"></i></span>
+                        </span>
+                        <h3 class="text-lg font-semibold mb-1 flex items-center"><span
+                                class="ml-10 text-red-500">Community Meetups</span></h3>
+                        <p class="text-gray-700 leading-relaxed">Bringing together cybersecurity enthusiasts to network,
+                            collaborate, and share insights.</p>
+                    </div>
+                    <div class="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-green-50 p-6 rounded-lg shadow-lg border-l-4 border-cyan-300 mb-6 transition-transform duration-300 ease-in-out hover:scale-105 animate__animated animate__fadeInUp"
+                        style="--animate-duration:1.6s;">
+                        <span class="absolute -top-5 left-5 animate__animated animate__fadeInLeft"
+                            style="--animate-duration:1.7s;">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-cyan-400 text-white text-lg shadow"><i
+                                    class="fas fa-globe"></i></span>
+                        </span>
+                        <h3 class="text-lg font-semibold mb-1 flex items-center"><span
+                                class="ml-10 text-pink-500">Online Campaigns</span></h3>
+                        <p class="text-gray-700 leading-relaxed">Spreading cybersecurity awareness through digital
+                            platforms and social media initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Testimonials Section -->
+        <div class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 flex items-center justify-center gap-2">
+                    <span
+                        class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-blue-400 to-cyan-500 mr-2">
+                        <i class="fas fa-comments text-white text-2xl"></i>
+                    </span>
+                    What Our Students Say <span class="ml-2 text-pink-500 animate-pulse">&hearts;</span>
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="relative bg-gradient-to-br from-blue-50 via-cyan-50 to-green-50 p-6 rounded-lg shadow-lg border-l-4 border-blue-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <span class="absolute -top-5 left-5">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-400 text-white text-lg shadow"><i
+                                    class="fas fa-quote-left"></i></span>
+                        </span>
+                        <p class="text-gray-700 leading-relaxed mb-4 mt-2">"The Cyber Pioneer has been a game-changer
+                            for me. The hands-on experience and community support are unparalleled."</p>
+                        <div class="text-right">
+                            <span class="text-blue-700 font-bold">- Sumit Shah</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="relative bg-gradient-to-br from-purple-50 via-fuchsia-50 to-pink-50 p-6 rounded-lg shadow-lg border-l-4 border-purple-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <span class="absolute -top-5 left-5">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-purple-400 text-white text-lg shadow"><i
+                                    class="fas fa-quote-left"></i></span>
+                        </span>
+                        <p class="text-gray-700 leading-relaxed mb-4 mt-2">"I have learned so much about ethical hacking
+                            and cybersecurity. The mentors are knowledgeable and always willing to help."</p>
+                        <div class="text-right">
+                            <span class="text-purple-700 font-bold">- Ankit Thakur</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="relative bg-gradient-to-br from-yellow-50 via-orange-50 to-pink-50 p-6 rounded-lg shadow-lg border-l-4 border-yellow-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <span class="absolute -top-5 left-5">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-yellow-400 text-white text-lg shadow"><i
+                                    class="fas fa-quote-left"></i></span>
+                        </span>
+                        <p class="text-gray-700 leading-relaxed mb-4 mt-2">"Joining The Cyber Pioneer was the best
+                            decision I made. The resources and community are top-notch."</p>
+                        <div class="text-right">
+                            <span class="text-yellow-600 font-bold">- Arun Gupta</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div
+                        class="relative bg-gradient-to-br from-green-50 via-blue-50 to-cyan-50 p-6 rounded-lg shadow-lg border-l-4 border-green-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <span class="absolute -top-5 left-5">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-green-400 text-white text-lg shadow"><i
+                                    class="fas fa-quote-left"></i></span>
+                        </span>
+                        <p class="text-gray-700 leading-relaxed mb-4 mt-2">"The collaborative environment and practical
+                            training have prepared me well for a career in cybersecurity."</p>
+                        <div class="text-right">
+                            <span class="text-green-600 font-bold">- Aarav Raj</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 5 -->
+                    <div
+                        class="relative bg-gradient-to-br from-pink-50 via-red-50 to-yellow-50 p-6 rounded-lg shadow-lg border-l-4 border-pink-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <span class="absolute -top-5 left-5">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-pink-400 text-white text-lg shadow"><i
+                                    class="fas fa-quote-left"></i></span>
+                        </span>
+                        <p class="text-gray-700 leading-relaxed mb-4 mt-2">"The Cyber Pioneer community is incredibly
+                            supportive. I've gained valuable skills and made lifelong friends."</p>
+                        <div class="text-right">
+                            <span class="text-pink-600 font-bold">- Aadarsh Sharma</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial 6 -->
+                    <div
+                        class="relative bg-gradient-to-br from-cyan-50 via-blue-50 to-green-50 p-6 rounded-lg shadow-lg border-l-4 border-cyan-300 hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <span class="absolute -top-5 left-5">
+                            <span
+                                class="flex items-center justify-center w-8 h-8 rounded-full bg-cyan-400 text-white text-lg shadow"><i
+                                    class="fas fa-quote-left"></i></span>
+                        </span>
+                        <p class="text-gray-700 leading-relaxed mb-4 mt-2">"The training and mentorship at The Cyber
+                            Pioneer have been instrumental in my professional growth."</p>
+                        <div class="text-right">
+                            <span class="text-cyan-700 font-bold">- Aman Gupta</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-10 md:gap-8 border-b border-gray-700 pb-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-users-cog text-blue-400"></i> About Us</h3>
+                    <p class="text-gray-400 mb-4">We are <span class="font-bold text-blue-300">The Cyber Pioneer</span>,
+                        a community dedicated to educating and raising awareness about cybersecurity. Join us in
+                        exploring the ever-changing world of security and technology.</p>
+                    <div class="flex space-x-3 mt-4">
+                        <!-- Social Media Icons -->
+                        <a href="https://www.facebook.com/profile.php?id=61578731491248"
+                            class="group bg-blue-900/30 hover:bg-blue-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Facebook">
+                            <i class="fab fa-facebook-f text-xl text-blue-400 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/the-cyber-pioneer/"
+                            class="group bg-blue-800/30 hover:bg-blue-700 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin-in text-xl text-blue-300 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://wa.me/9779746819176"
+                            class="group bg-green-900/30 hover:bg-green-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="WhatsApp">
+                            <i class="fab fa-whatsapp text-xl text-green-400 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://t.me/tcpioneerorg"
+                            class="group bg-cyan-900/30 hover:bg-cyan-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Telegram">
+                            <i class="fab fa-telegram-plane text-xl text-cyan-300 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tcpioneerorg/"
+                            class="group bg-pink-900/30 hover:bg-pink-600 transition-colors rounded-full w-12 h-12 flex items-center justify-center shadow"
+                            title="Instagram">
+                            <i class="fab fa-instagram text-xl text-pink-400 group-hover:text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-link text-green-400"></i> Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-home"></i> Home</a></li>
+                        <li><a href="/about/organization/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="/faq/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="/contact/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-phone-alt"></i> Contact</a></li>
+                        <li><a href="/disclaimer/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-exclamation-triangle"></i> Disclaimer</a></li>
+                        <li><a href="/joinus/"
+                                class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i
+                                    class="fas fa-user-plus"></i> Join Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2"><i
+                            class="fas fa-envelope-open-text text-cyan-400"></i> Contact Us</h3>
+                    <p class="text-gray-400 mb-4">Feel free to reach out for any questions or collaborations.</p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2"><i
+                            class="fas fa-phone-alt text-green-400"></i> <span>+977 9746819176</span></p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2"><i
+                            class="fas fa-envelope text-yellow-400"></i> <span>contact@tcpioneer.org</span></p>
+                    <p class="text-gray-400 flex items-center gap-2"><i class="fas fa-map-marker-alt text-pink-400"></i>
+                        <span>Birgunj, Nepal</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="mt-8 pt-4 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 <span class="text-blue-400 font-bold">The Cyber
+                        Pioneer</span>. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-4">Developed by <a href="http://anandkeshari.com.np" target="_blank"
+                        class="text-blue-300 hover:text-white transition-colors font-semibold">Anand Keshari</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
