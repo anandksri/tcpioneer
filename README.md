@@ -1,8 +1,8 @@
-# The Cyber Pioneer
+# TC Pioneer
 
-The Cyber Pioneer is my main repository for the current version of the cybersecurity community and learning platform.
+TC Pioneer is my main repository for the current version of the cybersecurity community and learning platform.
 
-The project brings together cybersecurity learning, resources, community work, and practical projects under the The Cyber Pioneer platform.
+The project brings together cybersecurity learning, resources, community work, and practical projects under the TC Pioneer platform.
 
 ## Project status
 
@@ -17,7 +17,7 @@ This repository is the current development repository. Older versions are kept s
 
 ## Website
 
-The Cyber Pioneer: https://www.tcpioneer.org/
+TC Pioneer: https://www.tcpioneer.org/
 
 ## Author
 
